@@ -36,14 +36,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Git操作-.gitignore相关]]></title>
-    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
-    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作1再次确保代码最新 3：git rm -r –cached .1清除本地项目目录下缓存 4: 新建or修改 .gitignore ，编辑好5: git add .6: git commit -m “add .gitignore”7: git push]]></content>
+    <title><![CDATA[iOS设备 获取 udid 方法]]></title>
+    <url>%2F2019%2F06%2F16%2Fios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[#ios设备 获取 udid 方法： 1234567891：使用iphone自带浏览器 safari访问 https://www.pgyer.com/udid 点击获取UDID按钮，弹窗后，点击允许2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:4：长按UDID串儿，拷贝5：将copy的UDID发送给ios开发人员,并附上自己设备的名称，用作区分]]></content>
       <categories>
-        <category>Git</category>
+        <category>iOS</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>iOS</tag>
       </tags>
   </entry>
   <entry>
@@ -81,14 +81,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[iOS设备 获取 udid 方法]]></title>
-    <url>%2F2019%2F06%2F16%2Fios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[#ios设备 获取 udid 方法： 1234567891：使用iphone自带浏览器 safari访问 https://www.pgyer.com/udid 点击获取UDID按钮，弹窗后，点击允许2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:4：长按UDID串儿，拷贝5：将copy的UDID发送给ios开发人员（肖猛、李健、程传村）,并附上自己设备的名称，用作区分]]></content>
+    <title><![CDATA[Git操作-.gitignore相关]]></title>
+    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
+    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作1再次确保代码最新 3：git rm -r –cached .1清除本地项目目录下缓存 4: 新建or修改 .gitignore ，编辑好5: git add .6: git commit -m “add .gitignore”7: git push]]></content>
       <categories>
-        <category>iOS</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>iOS</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
