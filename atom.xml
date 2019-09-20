@@ -5,9 +5,9 @@
   <subtitle>JohnyLisir Blogs</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T03:12:11.604Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://github.com/JohnyLisir/"/>
+  <updated>2019-09-20T03:20:20.736Z</updated>
+  <id>https://github.com/JohnyLisir/</id>
   
   <author>
     <name>[object Object]</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Blog创建教程</title>
-    <link href="http://yoursite.com/2019/09/18/blog%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/09/18/blog教程/</id>
+    <link href="https://github.com/JohnyLisir/2019/09/18/blog%E6%95%99%E7%A8%8B/"/>
+    <id>https://github.com/JohnyLisir/2019/09/18/blog教程/</id>
     <published>2019-09-18T08:08:36.880Z</published>
-    <updated>2019-09-20T03:12:11.604Z</updated>
+    <updated>2019-09-20T03:20:20.736Z</updated>
     
-    <content type="html"><![CDATA[<p>#一.本地调试</p><p>####1：启动本地服务</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo s</span><br></pre></td></tr></table></figure><p>####2: 本地 访问<br>在浏览器中:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://localhost:4000</span><br></pre></td></tr></table></figure><p>#二.发布blog到远程github</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>#一.本地调试</p><p>####1：启动本地服务</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo s</span><br></pre></td></tr></table></figure><p>####2: 本地 访问<br>在浏览器中:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://localhost:4000</span><br></pre></td></tr></table></figure><p>#二.发布blog到远程github</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><p>#三.文章的基本配置</p><p>每篇文章的基本配置如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World </span><br><span class="line">cover: http://oxnuwmm3w.bkt.clouddn.com/hello-world.jpeg</span><br><span class="line"># 作者信息，多作者则设置为数组</span><br><span class="line"># 单作者</span><br><span class="line">author: </span><br><span class="line">  nick: BruceYJ</span><br><span class="line">  link: https://www.github.com/BruceYuj</span><br><span class="line"># 多作者</span><br><span class="line">author:</span><br><span class="line">  - nick: BruceYJ</span><br><span class="line">    link: https://www.github.com/BruceYuj</span><br><span class="line">  - nick: minfive</span><br><span class="line">    link: https://www.github.com/Mrminfive</span><br><span class="line"></span><br><span class="line"># 如果文章为转载文章，需要多加文章出处项</span><br><span class="line">editor:</span><br><span class="line">  name: Minfive</span><br><span class="line">  link: https://www.github.com/Mrminfive</span><br><span class="line"></span><br><span class="line"># 首页每篇文章的子标题</span><br><span class="line">subtitle: your subtitle</span><br><span class="line"></span><br><span class="line"># 文章标签</span><br><span class="line">tags: [A, B, C]</span><br><span class="line"></span><br><span class="line"># 文章分类 ,目前我自己试过只能是单个的分类，使用 [iOS, web],会出现分级，且排版显示上不对称。</span><br><span class="line">categories: iOS</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -37,17 +37,17 @@
     </summary>
     
     
-      <category term="Blog" scheme="http://yoursite.com/categories/Blog/"/>
+      <category term="Blog" scheme="https://github.com/JohnyLisir/categories/Blog/"/>
     
     
-      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://github.com/JohnyLisir/tags/Blog/"/>
     
   </entry>
   
   <entry>
     <title>react-native 与原生混合开发教程</title>
-    <link href="http://yoursite.com/2019/09/04/react-native%20%E4%B8%8E%E5%8E%9F%E7%94%9F%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/"/>
-    <id>http://yoursite.com/2019/09/04/react-native 与原生混合开发/</id>
+    <link href="https://github.com/JohnyLisir/2019/09/04/react-native%20%E4%B8%8E%E5%8E%9F%E7%94%9F%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/"/>
+    <id>https://github.com/JohnyLisir/2019/09/04/react-native 与原生混合开发/</id>
     <published>2019-09-04T06:58:00.897Z</published>
     <updated>2019-09-20T03:13:20.456Z</updated>
     
@@ -66,21 +66,21 @@
     </summary>
     
     
-      <category term="React-native" scheme="http://yoursite.com/categories/React-native/"/>
+      <category term="React-native" scheme="https://github.com/JohnyLisir/categories/React-native/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/tags/iOS/"/>
     
-      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+      <category term="React" scheme="https://github.com/JohnyLisir/tags/React/"/>
     
-      <category term="React-native" scheme="http://yoursite.com/tags/React-native/"/>
+      <category term="React-native" scheme="https://github.com/JohnyLisir/tags/React-native/"/>
     
   </entry>
   
   <entry>
     <title>Git操作-ssh key配置相关</title>
-    <link href="http://yoursite.com/2019/08/10/gitlab%20ssh%20key%20%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2019/08/10/gitlab ssh key 配置/</id>
+    <link href="https://github.com/JohnyLisir/2019/08/10/gitlab%20ssh%20key%20%E9%85%8D%E7%BD%AE/"/>
+    <id>https://github.com/JohnyLisir/2019/08/10/gitlab ssh key 配置/</id>
     <published>2019-08-10T10:05:25.104Z</published>
     <updated>2019-09-20T03:12:50.755Z</updated>
     
@@ -98,44 +98,44 @@
     </summary>
     
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/tags/Git/"/>
     
   </entry>
   
   <entry>
-    <title>iOS设备 获取 udid 方法</title>
-    <link href="http://yoursite.com/2019/06/16/ios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2019/06/16/ios设备 获取 udid 方法/</id>
+    <title>Git操作-.gitignore相关</title>
+    <link href="https://github.com/JohnyLisir/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/git操作-挽救gitignore/</id>
     <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:14:07.764Z</updated>
+    <updated>2019-09-20T03:12:43.340Z</updated>
     
-    <content type="html"><![CDATA[<p>#ios设备 获取 udid 方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1：使用iphone自带浏览器 safari访问</span><br><span class="line">    https://www.pgyer.com/udid</span><br><span class="line">    点击获取UDID按钮，弹窗后，点击允许</span><br><span class="line"></span><br><span class="line">2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。</span><br><span class="line"></span><br><span class="line">3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:</span><br><span class="line">4：长按UDID串儿，拷贝</span><br><span class="line">5：将copy的UDID发送给ios开发人员,并附上自己设备的名称，用作区分</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作"><a href="#2：git-pull-操作" class="headerlink" title="2：git pull 操作"></a>2：git pull 操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次确保代码最新</span><br></pre></td></tr></table></figure><h4 id="3：git-rm-r-–cached"><a href="#3：git-rm-r-–cached" class="headerlink" title="3：git rm -r –cached ."></a>3：git rm -r –cached .</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除本地项目目录下缓存</span><br></pre></td></tr></table></figure><h4 id="4-新建or修改-gitignore-，编辑好"><a href="#4-新建or修改-gitignore-，编辑好" class="headerlink" title="4: 新建or修改 .gitignore ，编辑好"></a>4: 新建or修改 .gitignore ，编辑好</h4><h4 id="5-git-add"><a href="#5-git-add" class="headerlink" title="5: git add ."></a>5: git add .</h4><h4 id="6-git-commit-m-“add-gitignore”"><a href="#6-git-commit-m-“add-gitignore”" class="headerlink" title="6: git commit -m “add .gitignore”"></a>6: git commit -m “add .gitignore”</h4><h4 id="7-git-push"><a href="#7-git-push" class="headerlink" title="7: git push"></a>7: git push</h4>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#ios设备 获取 udid 方法：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;lin
+        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
+&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
       
     
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/categories/Git/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Git操作-tag相关</title>
-    <link href="http://yoursite.com/2019/06/16/git-tag-commonds/"/>
-    <id>http://yoursite.com/2019/06/16/git-tag-commonds/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/git-tag-commonds/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/git-tag-commonds/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:12:37.120Z</updated>
     
@@ -153,17 +153,17 @@
     </summary>
     
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://github.com/JohnyLisir/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Mac通过adb安装apk的教程</title>
-    <link href="http://yoursite.com/2019/06/16/Mac%E9%80%9A%E8%BF%87adb%E5%AE%89%E8%A3%85apk%E7%9A%84%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/06/16/Mac通过adb安装apk的教程/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/Mac%E9%80%9A%E8%BF%87adb%E5%AE%89%E8%A3%85apk%E7%9A%84%E6%95%99%E7%A8%8B/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/Mac通过adb安装apk的教程/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:13:04.674Z</updated>
     
@@ -183,17 +183,17 @@
     </summary>
     
     
-      <category term="APK" scheme="http://yoursite.com/categories/APK/"/>
+      <category term="APK" scheme="https://github.com/JohnyLisir/categories/APK/"/>
     
     
-      <category term="APK" scheme="http://yoursite.com/tags/APK/"/>
+      <category term="APK" scheme="https://github.com/JohnyLisir/tags/APK/"/>
     
   </entry>
   
   <entry>
     <title>Cocoapods私有库使用-进阶之二进制</title>
-    <link href="http://yoursite.com/2019/06/16/Cocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
-    <id>http://yoursite.com/2019/06/16/Cocoapods私有库使用-进阶之二进制/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/Cocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/Cocoapods私有库使用-进阶之二进制/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:12:22.983Z</updated>
     
@@ -210,46 +210,46 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/tags/iOS/"/>
     
-      <category term="Cocoapods" scheme="http://yoursite.com/tags/Cocoapods/"/>
+      <category term="Cocoapods" scheme="https://github.com/JohnyLisir/tags/Cocoapods/"/>
     
   </entry>
   
   <entry>
-    <title>Git操作-.gitignore相关</title>
-    <link href="http://yoursite.com/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
-    <id>http://yoursite.com/2019/06/16/git操作-挽救gitignore/</id>
+    <title>iOS设备 获取 udid 方法</title>
+    <link href="https://github.com/JohnyLisir/2019/06/16/ios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/ios设备 获取 udid 方法/</id>
     <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:43.340Z</updated>
+    <updated>2019-09-20T03:14:07.764Z</updated>
     
-    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作"><a href="#2：git-pull-操作" class="headerlink" title="2：git pull 操作"></a>2：git pull 操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次确保代码最新</span><br></pre></td></tr></table></figure><h4 id="3：git-rm-r-–cached"><a href="#3：git-rm-r-–cached" class="headerlink" title="3：git rm -r –cached ."></a>3：git rm -r –cached .</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除本地项目目录下缓存</span><br></pre></td></tr></table></figure><h4 id="4-新建or修改-gitignore-，编辑好"><a href="#4-新建or修改-gitignore-，编辑好" class="headerlink" title="4: 新建or修改 .gitignore ，编辑好"></a>4: 新建or修改 .gitignore ，编辑好</h4><h4 id="5-git-add"><a href="#5-git-add" class="headerlink" title="5: git add ."></a>5: git add .</h4><h4 id="6-git-commit-m-“add-gitignore”"><a href="#6-git-commit-m-“add-gitignore”" class="headerlink" title="6: git commit -m “add .gitignore”"></a>6: git commit -m “add .gitignore”</h4><h4 id="7-git-push"><a href="#7-git-push" class="headerlink" title="7: git push"></a>7: git push</h4>]]></content>
+    <content type="html"><![CDATA[<p>#ios设备 获取 udid 方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1：使用iphone自带浏览器 safari访问</span><br><span class="line">    https://www.pgyer.com/udid</span><br><span class="line">    点击获取UDID按钮，弹窗后，点击允许</span><br><span class="line"></span><br><span class="line">2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。</span><br><span class="line"></span><br><span class="line">3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:</span><br><span class="line">4：长按UDID串儿，拷贝</span><br><span class="line">5：将copy的UDID发送给ios开发人员,并附上自己设备的名称，用作区分</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
-&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
+        &lt;p&gt;#ios设备 获取 udid 方法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;lin
       
     
     </summary>
     
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/categories/iOS/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/tags/iOS/"/>
     
   </entry>
   
   <entry>
     <title>Python代码编译成Mac软件教程</title>
-    <link href="http://yoursite.com/2019/06/16/python%20%E4%BB%A3%E7%A0%81%20%E7%BC%96%E8%AF%91%E6%88%90%20mac%20%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://yoursite.com/2019/06/16/python 代码 编译成 mac 软件/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/python%20%E4%BB%A3%E7%A0%81%20%E7%BC%96%E8%AF%91%E6%88%90%20mac%20%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/python 代码 编译成 mac 软件/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:13:12.637Z</updated>
     
@@ -268,49 +268,19 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://github.com/JohnyLisir/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://github.com/JohnyLisir/tags/Python/"/>
     
-      <category term="Mac-app" scheme="http://yoursite.com/tags/Mac-app/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>APP与H5的交互规范</title>
-    <link href="http://yoursite.com/2019/06/16/APP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/"/>
-    <id>http://yoursite.com/2019/06/16/APP与h5同一调用规则说明/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:02.655Z</updated>
-    
-    <content type="html"><![CDATA[<p>#为了规范化 APP与H5调用通道，采用此类型声明</p><p>APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分</p><p>##（1）APP端提供方法:<br>  方法名：jsCallNative<br>  参数：param<br>   param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架）1-1：native端注册方法 jsCallNative  (以ios为例)//原生不提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    NSLog(@&quot;Log: %@&quot;, data);}];//2:原生提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);}];js端代码param = {    code = 1001,    data = {        title: &apos;双十一活动分享&apos;,        image: &apos;url&apos;,        sharePlatfrom: &apos;QQ&apos;,        ...    }}//1：不需要返回值bridge.callHandler(&quot;jsCallNative&quot;, param)//2：需要原生提供返回值(response为 nativa的返回值)bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) {    alert(&apos;Screen height:&apos; + response)})</code></pre><p>##（2）js端提供的方法:<br>    方法名: nativeCallJs<br>    参数：param<br>    param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如: nativa需要调用js的方法2-1: h5端注册方法nativeCallJs//不给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) })//给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) {    responseCallback(document.location.toString())})2-2: native端调用(以ios为例)//没有返回值[self.bridge callHandler:@&quot;nativeCallJs&quot; data:param];//有返回值(responseData)[self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) {    NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData);}];</code></pre><p>##(3): 本次分享模块方法类型定义</p><pre><code>app分享到QQcode: 1001 分享param:</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#为了规范化 APP与H5调用通道，采用此类型声明&lt;/p&gt;
-&lt;p&gt;APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分&lt;/p&gt;
-&lt;p&gt;##（1）APP端提供方法:&lt;br&gt;  方法名：jsCallNative&lt;br&gt;  参数：p
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+      <category term="Mac-app" scheme="https://github.com/JohnyLisir/tags/Mac-app/"/>
     
   </entry>
   
   <entry>
     <title>基于Python 搭建App服务器（Tornado）</title>
-    <link href="http://yoursite.com/2019/06/16/%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)/"/>
-    <id>http://yoursite.com/2019/06/16/基于Python 搭建App服务器（Tornado)/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/基于Python 搭建App服务器（Tornado)/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:11:44.931Z</updated>
     
@@ -329,23 +299,53 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://github.com/JohnyLisir/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://github.com/JohnyLisir/tags/Python/"/>
     
-      <category term="Server" scheme="http://yoursite.com/tags/Server/"/>
+      <category term="Server" scheme="https://github.com/JohnyLisir/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APP与H5的交互规范</title>
+    <link href="https://github.com/JohnyLisir/2019/06/16/APP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/APP与h5同一调用规则说明/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-09-20T03:12:02.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>#为了规范化 APP与H5调用通道，采用此类型声明</p><p>APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分</p><p>##（1）APP端提供方法:<br>  方法名：jsCallNative<br>  参数：param<br>   param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架）1-1：native端注册方法 jsCallNative  (以ios为例)//原生不提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    NSLog(@&quot;Log: %@&quot;, data);}];//2:原生提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);}];js端代码param = {    code = 1001,    data = {        title: &apos;双十一活动分享&apos;,        image: &apos;url&apos;,        sharePlatfrom: &apos;QQ&apos;,        ...    }}//1：不需要返回值bridge.callHandler(&quot;jsCallNative&quot;, param)//2：需要原生提供返回值(response为 nativa的返回值)bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) {    alert(&apos;Screen height:&apos; + response)})</code></pre><p>##（2）js端提供的方法:<br>    方法名: nativeCallJs<br>    参数：param<br>    param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如: nativa需要调用js的方法2-1: h5端注册方法nativeCallJs//不给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) })//给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) {    responseCallback(document.location.toString())})2-2: native端调用(以ios为例)//没有返回值[self.bridge callHandler:@&quot;nativeCallJs&quot; data:param];//有返回值(responseData)[self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) {    NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData);}];</code></pre><p>##(3): 本次分享模块方法类型定义</p><pre><code>app分享到QQcode: 1001 分享param:</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#为了规范化 APP与H5调用通道，采用此类型声明&lt;/p&gt;
+&lt;p&gt;APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分&lt;/p&gt;
+&lt;p&gt;##（1）APP端提供方法:&lt;br&gt;  方法名：jsCallNative&lt;br&gt;  参数：p
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://github.com/JohnyLisir/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://github.com/JohnyLisir/tags/iOS/"/>
+    
+      <category term="Web" scheme="https://github.com/JohnyLisir/tags/Web/"/>
     
   </entry>
   
   <entry>
     <title>Cocoapods私有库-制作教程</title>
-    <link href="http://yoursite.com/2019/06/16/cocoapods%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/06/16/cocoapods制作教程/</id>
+    <link href="https://github.com/JohnyLisir/2019/06/16/cocoapods%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
+    <id>https://github.com/JohnyLisir/2019/06/16/cocoapods制作教程/</id>
     <published>2019-06-16T02:44:29.000Z</published>
     <updated>2019-09-20T03:12:30.817Z</updated>
     
-    <content type="html"><![CDATA[<p>#Cocoapods 私有库方案说明:<br>    为了使我们的项目更好的管理、模块更好的复用与维护，<br>    经过研究决定采用 模块化配合Cocoapods的方案，以实现目的.</p><p>##注意：<br>我们gowild-pod仓库 名字： gowild-app-eve_app_ios_spec<br>完整的pod推送命令(以网络库的push为例)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pod repo push gowild-app-eve_app_ios_spec GWNetworkFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line">pod repo push gowild-app-eve_app_ios_spec GWUFileFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line">pod repo push gowild-app-eve_app_ios_spec GWRouterKit.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">对应的lint</span><br><span class="line">pod lib lint --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br></pre></td></tr></table></figure><p>###(1)需要实现的步骤: (pod lib lint -&gt; git push -&gt; git add tag and push -&gt; pod repo push)<br>        1: 在自己的git服务器创建属于自己的cocoapods 仓库项目（仓库名如: GWSpec）<br>        2: 在本地命令行执行 pod repo add &lt;#仓库名#&gt;  &lt;#仓库项目的git地址#&gt;<br>         如：pod repo add  GWSpec  https:/gitlab.gowild.top/GWSpec.git<br>         执行完该命令后，你可以去本地 ~/.cocoapods/repo/ 目录下，会发现新增了一个与master同级名为GWSpec 的文件夹， master 是cocoapods官方库在本地的文件目录，而 GWSpec 则是我们自己搭建的私有化pods 仓库目录<br>        3: 在自己的git服务器创建 pod项目，如 podTestLibrary,<br>        4: 在本地创建一个pods_space的目录，命令行下 cd 到该目录下，执行命令<br>          pod lib create podTestLibrary 的到一个xcode项目,目录结构如：<br>          PodTestLibrary<br>            ├── Example                                  #demo APP<br>            │   ├── PodTestLibrary<br>            │   ├── PodTestLibrary.xcodeproj<br>            │   ├── PodTestLibrary.xcworkspace<br>            │   ├── Podfile                              #demo APP 的依赖描述文件<br>            │   ├── Podfile.lock<br>            │   ├── Pods                                  #demo APP 的依赖文件<br>            │   └── Tests<br>            ├── LICENSE                               #开源协议 默认MIT<br>            ├── Pod                                       #组件的目录<br>            │   ├── Assets                            #资源文件<br>            │   └── Classes                              #类文件<br>            ├── PodTestLibrary.podspec           #第三步要创建的podspec文件<br>            └── README.md</p><pre><code>5：将自己要封装的源码加入到Classes 文件夹下， 然后配置好 Podspec Metadata 下的 xxx.podspec 文件 (注：别忘了将pod测试项目的依赖版本号改为与 .podspec 文件中的一样，这点很重要哦)6: 命令行下cd Example ，执行pod update7: 重新打开Example 里的 xxx.xcworkspace 文件，在import 封装的某个头文件编译一下，通过就完成了第一步咯8：命令行，在pod项目根目录下 执行 pod lib lint ，只是检查自建的pod项目，各个配置是否副歌规范。如果有错误，根据错误提示修改；如果没错执行下一步    注:如果想忽略警告 pod lib lint --allow-warnings    eg: pod lib lint --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;9: 命令行执行 pod spec lint ,只是检查自建的pod项目能否在cocoapods体系中使用，因为目前还没推送上去，也没将私有pod项目推送到私有pod仓库，此时肯定会报错啦。请继续执行下一步10: 将本地pod项目 push到远程git服务器(并对git 打上对应版本的tag，推送上去)， 然后命令行  执行 pod repo push GWSpec podTestLibrary.podspec ,将pod项目的索引加入自建的私有pod仓库中, 注: 如果因为警告（错误的话自己解决^_^）,可以采用命令    pod repo push GWSpec podTestLibrary.podspec --allow-warnings11：此时在本地新建一个项目，按照(2)去使用我们自己的私有pod关于pod迭代:1: 确保迭代新增的代码可运行，没有错误2: (别忘了)将 xx.podspec 文件中 version 递增一个版本，比如改为 0.2.03: 将要提交的代码push到私有git服务器4: 打上tag （如第一次的tag = podspec.vresion = 0.1.0）    这次，执行 git tag 0.2.0 ,再执行 git push --tags 5: 执行 pod repo push GWSpec podTestLibrary.podspec, 再次将新version推送到私有pod仓库中6: 此时 pod search podTestLibrary,会看到新增的version， Versions: 0.2.0, 0.1.0 【GWSpec】7: 使用新版本的pod， 在命令执行 pod update</code></pre><p>###(2)关于私有pod 的使用<br>    1: 在新建项目里的 podfile文件中开头出添加<br>       source ‘<a href="https://gitlab.gowild.top/GWSpec.git&#39;" target="_blank" rel="noopener">https://gitlab.gowild.top/GWSpec.git&#39;</a><br>       source ‘<a href="https://github.com/Cocoapods/Specs.git&#39;" target="_blank" rel="noopener">https://github.com/Cocoapods/Specs.git&#39;</a></p><pre><code>作用: 第一句是将我们自己的私有pod 仓库引入到Cocoapods的体系中，这样执行 pod install 才能搜到我们自己的私有pod，但是加了第一句之后，官方的pod就搜索不到了，比如此时你引用了 &apos;AFNetworking&apos;，pod install 就会提示搜索不到，此时就要加入第二句了</code></pre><p>###(3)关于 pod install 与 pod update 分别在什么时候使用<br>     1: 执行 pod install ，会生成podfile.lock ,同时他只会补充podfile中有 项目中没有的pod工程，已经存在的他不会更新，即使有新版本了，也不会给你升级<br>     2：执行 pod update ，原来没有的pod工程，他会给你安装最新版的，原来有的，他会给你升级到最新版</p><p>###(4)关于pod项目push到git服务器<br>    git add .<br>    git commit -m “Initial Commit of Library”<br>    #添加远端仓库<br>    git remote add origin <a href="https://git.oschina.net/wuhongxing/PrivateRepo.git" target="_blank" rel="noopener">https://git.oschina.net/wuhongxing/PrivateRepo.git</a><br>    #推送到远端仓库<br>    git push origin master</p><p>###(5)关于pod项目打tag,push到git服务器</p><pre><code>添加taggit tag 0.1.0 -m &quot;first release&quot;git push --tags     #推送tag到远端仓库删除taggit tag -d  0.1.0git push origin :refs/tags/0.1.0</code></pre><p>我在Github新建一个仓库，写了License，然后把本地一个写了很久仓库上传。<br>先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull<br>因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，<br>这句代码是在git 2.9.2版本发生的，最新的版本需要添加–allow-unrelated-histories<br>git pull origin master –allow-unrelated-histories</p><p>#<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>具体实践过程中遇到的问题<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p>###question1:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">原来的GWLogFramework 工程引用了mars.framework，没出现啥问题l；但是自己新建一个pod工程，将核心代码以及mars.framework移进去，报 #include&lt;limits&gt; file not found 错误</span><br><span class="line"></span><br><span class="line">解决： 经过2天的各种排查，百度、谷歌，没找到很相似的问题答案，尝试将GWMarsLogManager.m 改为 xxx.mm 成功跑起来了</span><br></pre></td></tr></table></figure><p>###question2:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">对于私有pod 依赖于私有pod这种情况(比如：我们的GWNetworkFrameWork依赖于GWLogFramework)，有使用和检测两方面的注意点,</span><br><span class="line">1:使用 </span><br><span class="line">xxxx.podspec下直接应用</span><br><span class="line">#------------------文件分级------------------#</span><br><span class="line"></span><br><span class="line">#s.subspec &apos;Vendor&apos; do |ss|</span><br><span class="line">#ss.source_files = &apos;GWNetworkFramework/Classes/Vendor/**/*&apos;</span><br><span class="line">#end</span><br><span class="line"></span><br><span class="line">s.subspec &apos;Core&apos; do |ss|</span><br><span class="line">#ss.dependency &apos;GWNetworkFramework/Vendor&apos;</span><br><span class="line">ss.source_files = &apos;GWNetworkFramework/Classes/Core/**/*&apos;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">s.dependency &apos;AFNetworking&apos;, &apos;~&gt; 2.3&apos;</span><br><span class="line">s.dependency &apos;CocoaAsyncSocket&apos;</span><br><span class="line">s.dependency &apos;YYModel&apos;</span><br><span class="line">s.dependency &apos;YYCache&apos;</span><br><span class="line">s.dependency &apos;SocketRocket&apos;</span><br><span class="line">s.dependency &apos;GWLogFramework&apos;</span><br><span class="line">s.frameworks = &apos;UIKit&apos;, &apos;CFNetwork&apos;</span><br><span class="line"></span><br><span class="line">同时，新pod的example 工程的podfile顶部需引入2个source源</span><br><span class="line">2:检测</span><br><span class="line">注意: source1Url,source2Url,分别代表着cocoapods官方的仓库git地址以及自己的私有库git地址</span><br><span class="line">lint的时候使用 pod lib lint   --allow-warnings   --sources=&apos;source1Url,source2Url&apos;</span><br><span class="line">push的时候用 pod repo push GWSpec GWNetworkFramework.podspec   --sources=&apos;source1Url,source2Url&apos;</span><br></pre></td></tr></table></figure><p>#<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>参考文档 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Cocoapods 制作</span><br><span class="line">参考1： https://www.jianshu.com/p/d6a592d6fced</span><br><span class="line">参考2：https://www.jianshu.com/p/07f7854cd563</span><br><span class="line"></span><br><span class="line">Cocoapods制作-bundle制作及使用</span><br><span class="line">参考：https://www.jianshu.com/p/055906d5ae27</span><br><span class="line"></span><br><span class="line">Cocoapods framework制作</span><br><span class="line">参考: http://www.cnblogs.com/brycezhang/p/4117180.html</span><br><span class="line"></span><br><span class="line">Cocoapods podfile 相关介绍</span><br><span class="line">参考: https://www.jianshu.com/p/b8b889610b7e</span><br><span class="line"></span><br><span class="line">Cocoapods 制作中肯定遇到的问题</span><br><span class="line">参考：https://www.jianshu.com/p/1f56c3d78b52</span><br></pre></td></tr></table></figure><p>##2: cocoapods二进制packager 的使用</p><pre><code>eg: pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps --subspecs=Core  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git参考:  https://www.zybuluo.com/qidiandasheng/note/595740</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>#Cocoapods 私有库方案说明:<br>    为了使我们的项目更好的管理、模块更好的复用与维护，<br>    经过研究决定采用 模块化配合Cocoapods的方案，以实现目的.</p><p>##注意：<br>我们gowild-pod仓库 名字： gowild-app-eve_app_ios_spec<br>完整的pod推送命令(以网络库的push为例)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pod repo push gowild-app-eve_app_ios_spec GWNetworkFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line">pod repo push gowild-app-eve_app_ios_spec GWUFileFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line">pod repo push gowild-app-eve_app_ios_spec GWRouterKit.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">对应的lint</span><br><span class="line">pod lib lint --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br></pre></td></tr></table></figure><p>###(1)需要实现的步骤: (pod lib lint -&gt; git push -&gt; git add tag and push -&gt; pod repo push)<br>        1: 在自己的git服务器创建属于自己的cocoapods 仓库项目（仓库名如: GWSpec）<br>        2: 在本地命令行执行 pod repo add &lt;#仓库名#&gt;  &lt;#仓库项目的git地址#&gt;<br>         如：pod repo add  GWSpec  https:/gitlab.gowild.top/GWSpec.git<br>         执行完该命令后，你可以去本地 ~/.cocoapods/repo/ 目录下，会发现新增了一个与master同级名为GWSpec 的文件夹， master 是cocoapods官方库在本地的文件目录，而 GWSpec 则是我们自己搭建的私有化pods 仓库目录<br>        3: 在自己的git服务器创建 pod项目，如 podTestLibrary,<br>        4: 在本地创建一个pods_space的目录，命令行下 cd 到该目录下，执行命令<br>          pod lib create podTestLibrary 的到一个xcode项目,目录结构如：<br>          PodTestLibrary<br>            ├── Example                                  #demo APP<br>            │   ├── PodTestLibrary<br>            │   ├── PodTestLibrary.xcodeproj<br>            │   ├── PodTestLibrary.xcworkspace<br>            │   ├── Podfile                              #demo APP 的依赖描述文件<br>            │   ├── Podfile.lock<br>            │   ├── Pods                                  #demo APP 的依赖文件<br>            │   └── Tests<br>            ├── LICENSE                               #开源协议 默认MIT<br>            ├── Pod                                       #组件的目录<br>            │   ├── Assets                            #资源文件<br>            │   └── Classes                              #类文件<br>            ├── PodTestLibrary.podspec           #第三步要创建的podspec文件<br>            └── README.md</p><pre><code>5：将自己要封装的源码加入到Classes 文件夹下， 然后配置好 Podspec Metadata 下的 xxx.podspec 文件 (注：别忘了将pod测试项目的依赖版本号改为与 .podspec 文件中的一样，这点很重要哦)6: 命令行下cd Example ，执行pod update7: 重新打开Example 里的 xxx.xcworkspace 文件，在import 封装的某个头文件编译一下，通过就完成了第一步咯8：命令行，在pod项目根目录下 执行 pod lib lint ，只是检查自建的pod项目，各个配置是否副歌规范。如果有错误，根据错误提示修改；如果没错执行下一步    注:如果想忽略警告 pod lib lint --allow-warnings    eg: pod lib lint --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;9: 命令行执行 pod spec lint ,只是检查自建的pod项目能否在cocoapods体系中使用，因为目前还没推送上去，也没将私有pod项目推送到私有pod仓库，此时肯定会报错啦。请继续执行下一步10: 将本地pod项目 push到远程git服务器(并对git 打上对应版本的tag，推送上去)， 然后命令行  执行 pod repo push GWSpec podTestLibrary.podspec ,将pod项目的索引加入自建的私有pod仓库中, 注: 如果因为警告（错误的话自己解决^_^）,可以采用命令    pod repo push GWSpec podTestLibrary.podspec --allow-warnings11：此时在本地新建一个项目，按照(2)去使用我们自己的私有pod关于pod迭代:1: 确保迭代新增的代码可运行，没有错误2: (别忘了)将 xx.podspec 文件中 version 递增一个版本，比如改为 0.2.03: 将要提交的代码push到私有git服务器4: 打上tag （如第一次的tag = podspec.vresion = 0.1.0）    这次，执行 git tag 0.2.0 ,再执行 git push --tags 5: 执行 pod repo push GWSpec podTestLibrary.podspec, 再次将新version推送到私有pod仓库中6: 此时 pod search podTestLibrary,会看到新增的version， Versions: 0.2.0, 0.1.0 【GWSpec】7: 使用新版本的pod， 在命令执行 pod update</code></pre><p>###(2)关于私有pod 的使用<br>    1: 在新建项目里的 podfile文件中开头出添加<br>       source ‘<a href="https://gitlab.gowild.top/GWSpec.git&#39;" target="_blank" rel="noopener">https://gitlab.gowild.top/GWSpec.git&#39;</a><br>       source ‘<a href="https://github.com/Cocoapods/Specs.git&#39;">https://github.com/Cocoapods/Specs.git&#39;</a></p><pre><code>作用: 第一句是将我们自己的私有pod 仓库引入到Cocoapods的体系中，这样执行 pod install 才能搜到我们自己的私有pod，但是加了第一句之后，官方的pod就搜索不到了，比如此时你引用了 &apos;AFNetworking&apos;，pod install 就会提示搜索不到，此时就要加入第二句了</code></pre><p>###(3)关于 pod install 与 pod update 分别在什么时候使用<br>     1: 执行 pod install ，会生成podfile.lock ,同时他只会补充podfile中有 项目中没有的pod工程，已经存在的他不会更新，即使有新版本了，也不会给你升级<br>     2：执行 pod update ，原来没有的pod工程，他会给你安装最新版的，原来有的，他会给你升级到最新版</p><p>###(4)关于pod项目push到git服务器<br>    git add .<br>    git commit -m “Initial Commit of Library”<br>    #添加远端仓库<br>    git remote add origin <a href="https://git.oschina.net/wuhongxing/PrivateRepo.git" target="_blank" rel="noopener">https://git.oschina.net/wuhongxing/PrivateRepo.git</a><br>    #推送到远端仓库<br>    git push origin master</p><p>###(5)关于pod项目打tag,push到git服务器</p><pre><code>添加taggit tag 0.1.0 -m &quot;first release&quot;git push --tags     #推送tag到远端仓库删除taggit tag -d  0.1.0git push origin :refs/tags/0.1.0</code></pre><p>我在Github新建一个仓库，写了License，然后把本地一个写了很久仓库上传。<br>先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull<br>因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，<br>这句代码是在git 2.9.2版本发生的，最新的版本需要添加–allow-unrelated-histories<br>git pull origin master –allow-unrelated-histories</p><p>#<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>具体实践过程中遇到的问题<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p>###question1:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">原来的GWLogFramework 工程引用了mars.framework，没出现啥问题l；但是自己新建一个pod工程，将核心代码以及mars.framework移进去，报 #include&lt;limits&gt; file not found 错误</span><br><span class="line"></span><br><span class="line">解决： 经过2天的各种排查，百度、谷歌，没找到很相似的问题答案，尝试将GWMarsLogManager.m 改为 xxx.mm 成功跑起来了</span><br></pre></td></tr></table></figure><p>###question2:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">对于私有pod 依赖于私有pod这种情况(比如：我们的GWNetworkFrameWork依赖于GWLogFramework)，有使用和检测两方面的注意点,</span><br><span class="line">1:使用 </span><br><span class="line">xxxx.podspec下直接应用</span><br><span class="line">#------------------文件分级------------------#</span><br><span class="line"></span><br><span class="line">#s.subspec &apos;Vendor&apos; do |ss|</span><br><span class="line">#ss.source_files = &apos;GWNetworkFramework/Classes/Vendor/**/*&apos;</span><br><span class="line">#end</span><br><span class="line"></span><br><span class="line">s.subspec &apos;Core&apos; do |ss|</span><br><span class="line">#ss.dependency &apos;GWNetworkFramework/Vendor&apos;</span><br><span class="line">ss.source_files = &apos;GWNetworkFramework/Classes/Core/**/*&apos;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">s.dependency &apos;AFNetworking&apos;, &apos;~&gt; 2.3&apos;</span><br><span class="line">s.dependency &apos;CocoaAsyncSocket&apos;</span><br><span class="line">s.dependency &apos;YYModel&apos;</span><br><span class="line">s.dependency &apos;YYCache&apos;</span><br><span class="line">s.dependency &apos;SocketRocket&apos;</span><br><span class="line">s.dependency &apos;GWLogFramework&apos;</span><br><span class="line">s.frameworks = &apos;UIKit&apos;, &apos;CFNetwork&apos;</span><br><span class="line"></span><br><span class="line">同时，新pod的example 工程的podfile顶部需引入2个source源</span><br><span class="line">2:检测</span><br><span class="line">注意: source1Url,source2Url,分别代表着cocoapods官方的仓库git地址以及自己的私有库git地址</span><br><span class="line">lint的时候使用 pod lib lint   --allow-warnings   --sources=&apos;source1Url,source2Url&apos;</span><br><span class="line">push的时候用 pod repo push GWSpec GWNetworkFramework.podspec   --sources=&apos;source1Url,source2Url&apos;</span><br></pre></td></tr></table></figure><p>#<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>参考文档 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Cocoapods 制作</span><br><span class="line">参考1： https://www.jianshu.com/p/d6a592d6fced</span><br><span class="line">参考2：https://www.jianshu.com/p/07f7854cd563</span><br><span class="line"></span><br><span class="line">Cocoapods制作-bundle制作及使用</span><br><span class="line">参考：https://www.jianshu.com/p/055906d5ae27</span><br><span class="line"></span><br><span class="line">Cocoapods framework制作</span><br><span class="line">参考: http://www.cnblogs.com/brycezhang/p/4117180.html</span><br><span class="line"></span><br><span class="line">Cocoapods podfile 相关介绍</span><br><span class="line">参考: https://www.jianshu.com/p/b8b889610b7e</span><br><span class="line"></span><br><span class="line">Cocoapods 制作中肯定遇到的问题</span><br><span class="line">参考：https://www.jianshu.com/p/1f56c3d78b52</span><br></pre></td></tr></table></figure><p>##2: cocoapods二进制packager 的使用</p><pre><code>eg: pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps --subspecs=Core  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git参考:  https://www.zybuluo.com/qidiandasheng/note/595740</code></pre>]]></content>
     
     <summary type="html">
     
@@ -358,12 +358,12 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="iOS" scheme="https://github.com/JohnyLisir/tags/iOS/"/>
     
-      <category term="Cocoapods" scheme="http://yoursite.com/tags/Cocoapods/"/>
+      <category term="Cocoapods" scheme="https://github.com/JohnyLisir/tags/Cocoapods/"/>
     
   </entry>
   

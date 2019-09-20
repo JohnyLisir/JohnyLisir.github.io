@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Blog创建教程]]></title>
     <url>%2F2019%2F09%2F18%2Fblog%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[#一.本地调试 ####1：启动本地服务 1$hexo s ####2: 本地 访问在浏览器中: 1https://localhost:4000 #二.发布blog到远程github 1$hexo clean &amp;&amp; hexo g &amp;&amp; hexo d]]></content>
+    <content type="text"><![CDATA[#一.本地调试 ####1：启动本地服务 1$hexo s ####2: 本地 访问在浏览器中: 1https://localhost:4000 #二.发布blog到远程github 1$hexo clean &amp;&amp; hexo g &amp;&amp; hexo d #三.文章的基本配置 每篇文章的基本配置如下 1234567891011121314151617181920212223242526272829---title: Hello World cover: http://oxnuwmm3w.bkt.clouddn.com/hello-world.jpeg# 作者信息，多作者则设置为数组# 单作者author: nick: BruceYJ link: https://www.github.com/BruceYuj# 多作者author: - nick: BruceYJ link: https://www.github.com/BruceYuj - nick: minfive link: https://www.github.com/Mrminfive# 如果文章为转载文章，需要多加文章出处项editor: name: Minfive link: https://www.github.com/Mrminfive# 首页每篇文章的子标题subtitle: your subtitle# 文章标签tags: [A, B, C]# 文章分类 ,目前我自己试过只能是单个的分类，使用 [iOS, web],会出现分级，且排版显示上不对称。categories: iOS---]]></content>
       <categories>
         <category>Blog</category>
       </categories>
@@ -36,14 +36,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[iOS设备 获取 udid 方法]]></title>
-    <url>%2F2019%2F06%2F16%2Fios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[#ios设备 获取 udid 方法： 1234567891：使用iphone自带浏览器 safari访问 https://www.pgyer.com/udid 点击获取UDID按钮，弹窗后，点击允许2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:4：长按UDID串儿，拷贝5：将copy的UDID发送给ios开发人员,并附上自己设备的名称，用作区分]]></content>
+    <title><![CDATA[Git操作-.gitignore相关]]></title>
+    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
+    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作1再次确保代码最新 3：git rm -r –cached .1清除本地项目目录下缓存 4: 新建or修改 .gitignore ，编辑好5: git add .6: git commit -m “add .gitignore”7: git push]]></content>
       <categories>
-        <category>iOS</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>iOS</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -81,14 +81,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Git操作-.gitignore相关]]></title>
-    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
-    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作1再次确保代码最新 3：git rm -r –cached .1清除本地项目目录下缓存 4: 新建or修改 .gitignore ，编辑好5: git add .6: git commit -m “add .gitignore”7: git push]]></content>
+    <title><![CDATA[iOS设备 获取 udid 方法]]></title>
+    <url>%2F2019%2F06%2F16%2Fios%E8%AE%BE%E5%A4%87%20%E8%8E%B7%E5%8F%96%20udid%20%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[#ios设备 获取 udid 方法： 1234567891：使用iphone自带浏览器 safari访问 https://www.pgyer.com/udid 点击获取UDID按钮，弹窗后，点击允许2: 前往手机的 设置-&gt;通用-&gt;描述文件与设备管理, 点击 “蒲公英(PGYER)”, 点击右上角安装，并输入密码以完成安装。3：安装过程完成会自动跳回 Safari浏览器 ，可以看到设备信息UDID:4：长按UDID串儿，拷贝5：将copy的UDID发送给ios开发人员,并附上自己设备的名称，用作区分]]></content>
       <categories>
-        <category>Git</category>
+        <category>iOS</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>iOS</tag>
       </tags>
   </entry>
   <entry>
@@ -104,18 +104,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[APP与H5的交互规范]]></title>
-    <url>%2F2019%2F06%2F16%2FAPP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E%2F</url>
-    <content type="text"><![CDATA[#为了规范化 APP与H5调用通道，采用此类型声明 APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分 ##（1）APP端提供方法: 方法名：jsCallNative 参数：param param = { code: 1001, data: 传递的方法参数 } 例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架） 1-1：native端注册方法 jsCallNative (以ios为例) //原生不提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { NSLog(@&quot;Log: %@&quot;, data); }]; //2:原生提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]); }]; js端代码 param = { code = 1001, data = { title: &apos;双十一活动分享&apos;, image: &apos;url&apos;, sharePlatfrom: &apos;QQ&apos;, ... } } //1：不需要返回值 bridge.callHandler(&quot;jsCallNative&quot;, param) //2：需要原生提供返回值(response为 nativa的返回值) bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) { alert(&apos;Screen height:&apos; + response) })##（2）js端提供的方法: 方法名: nativeCallJs 参数：param param = { code: 1001, data: 传递的方法参数 } 例如: nativa需要调用js的方法 2-1: h5端注册方法nativeCallJs //不给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) }) //给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) { responseCallback(document.location.toString()) }) 2-2: native端调用(以ios为例) //没有返回值 [self.bridge callHandler:@&quot;nativeCallJs&quot; data:param]; //有返回值(responseData) [self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) { NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData); }];##(3): 本次分享模块方法类型定义 app分享到QQ code: 1001 分享 param:]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[基于Python 搭建App服务器（Tornado）]]></title>
     <url>%2F2019%2F06%2F16%2F%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)%2F</url>
     <content type="text"><![CDATA[#基于Python 搭建App服务器（Tornado） 说明：该教程基于CentOS7.2 64位 ##(1):环境配置(基于CentOS操作系统) CentOS 7.2 操作系统自带的 Python 版本为 2.7.5，本小册将以 Python 3.6.2 的版本进行讲解。即安装完 Python 3.6.2 后，系统上同时存在 Python 2.7.5 和 Python 3.6.2 两个版本。 12345678910111213141516171819202122232425262728293031323334351：安装依赖包$yum -y groupinstall &quot;Development tools&quot;$yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel2: 下载Python 3.6.2$wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz(注意：)如果提示 wget 命令无法找到，请先执行 yum -y install wget ,进行安装3: 创建安装目录$mkdir /usr/local/python34: 安装gcc由于 Python 3.6.2 的编译需要编译环境，故需安装 gcc。$yum -y install gcc5: 安装Python3.6.2解压 Python 3.6.2 并安装在 /usr/local/python3 目录下。$tar -xvJf Python-3.6.2.tar.xz$cd Python-3.6.2$./configure --prefix=/usr/local/python3$make &amp;&amp; make install6：创建软连$ln -s /usr/local/python3/bin/python3 /usr/bin/python3$ln -s /usr/local/python3/bin/pip3 /usr/bin/pip37: 测试 python3$python3 --version ##(2): 安装TornadoCentOS 下还无法直接使用 yum install tornado，但可以使用 pip 安装 Tornado。先执行 pip3 install –upgrade pip 命令升级 pip，再执行 pip3 install tornado 命令安装 Tornado。 测试Tornado 安装是否成功: 12$python3$import tornado ##(3): 安装MySQL 123456789$yum install mysql-devel$wget http://dev.mysql.com/get/mysql-community-$release-el7-5.noarch.rpm$rpm -ivh mysql-community-release-el7-5.noarch.rpm$yum -y install mysql-community-server$pip3 install mysqlclient$service mysqld restart#测试 MySQL 是否安装成功$systemctl status mysqld.service ##(4): 安装 SQLAlchemy 12345$pip3 install SQLAlchemy#测试 SQLAlchemy 是否安装成功$python3$import sqlalchemy ##(5): 代码编辑器mac 上推荐使用 VSCode ，搭配ftp 插件使用 ##(6): 创建 服务器工程 目录 demo 1234在root 根目录下,$cd /data (没有data目录的话, cd / ,mkdir data,然后 cd ~,再cd /data)#创建 demo文件夹$mkdir demo]]></content>
@@ -125,6 +113,18 @@
       <tags>
         <tag>Python</tag>
         <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[APP与H5的交互规范]]></title>
+    <url>%2F2019%2F06%2F16%2FAPP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E%2F</url>
+    <content type="text"><![CDATA[#为了规范化 APP与H5调用通道，采用此类型声明 APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分 ##（1）APP端提供方法: 方法名：jsCallNative 参数：param param = { code: 1001, data: 传递的方法参数 } 例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架） 1-1：native端注册方法 jsCallNative (以ios为例) //原生不提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { NSLog(@&quot;Log: %@&quot;, data); }]; //2:原生提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]); }]; js端代码 param = { code = 1001, data = { title: &apos;双十一活动分享&apos;, image: &apos;url&apos;, sharePlatfrom: &apos;QQ&apos;, ... } } //1：不需要返回值 bridge.callHandler(&quot;jsCallNative&quot;, param) //2：需要原生提供返回值(response为 nativa的返回值) bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) { alert(&apos;Screen height:&apos; + response) })##（2）js端提供的方法: 方法名: nativeCallJs 参数：param param = { code: 1001, data: 传递的方法参数 } 例如: nativa需要调用js的方法 2-1: h5端注册方法nativeCallJs //不给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) }) //给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) { responseCallback(document.location.toString()) }) 2-2: native端调用(以ios为例) //没有返回值 [self.bridge callHandler:@&quot;nativeCallJs&quot; data:param]; //有返回值(responseData) [self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) { NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData); }];##(3): 本次分享模块方法类型定义 app分享到QQ code: 1001 分享 param:]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
