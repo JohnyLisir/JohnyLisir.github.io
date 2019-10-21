@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于本地服务live-server的使用]]></title>
+    <url>%2F2019%2F10%2F21%2F%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1live-server%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[#关于本地服务live-server的使用 ##live-server: 是一款npm工具，可以快速帮我们搭建一个本地服务 #环境： Mac + Node 请确保本地有安装Node cd本地根目录下（例如：admin），创建一个文件夹，如 ‘live-server’ 12$cd Desktop$mkdir live-server cd 到刚创建的 live-server文件夹下， 执行 npm init -y ,会在当前路径下产生一个package.json文件，这是一个服务配置文件 12$cd live-server$npm init -y 修改package.json中的’scripts’, 新增一个 ‘server’ 123456789101112131415161718 &#123; &quot;name&quot;: &quot;admin&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;description&quot;: &quot;&quot;, &quot;main&quot;: &quot;index.js&quot;, &quot;dependencies&quot;: &#123; &quot;gulp&quot;: &quot;^4.0.2&quot;, &quot;less&quot;: &quot;^3.9.0&quot; &#125;, &quot;devDependencies&quot;: &#123;&#125;, &quot;scripts&quot;: &#123; &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;, &quot;server&quot;: &quot;live-server ./ --port=8081&quot; #新增的 &#125;, &quot;keywords&quot;: [], &quot;author&quot;: &quot;&quot;, &quot;license&quot;: &quot;ISC&quot;&#125; 在cd 到 live-server文件夹下，执行npm run server 1$npm run server 将你想被访问的文件都copy到 live-server文件夹下,如 xxxx.txt文件 浏览器下刷新 or 访问 ‘http://127.0.0.1:8081/xxxx.txt&#39;即可访问 停掉服务, ’Control C‘.]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Blog创建教程]]></title>
     <url>%2F2019%2F09%2F18%2Fblog%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[#一.本地调试 ####1：启动本地服务 1$hexo s ####2: 本地 访问在浏览器中: 1https://localhost:4000 #二.发布blog到远程github 1$hexo clean &amp;&amp; hexo g &amp;&amp; hexo d #三.文章的基本配置 每篇文章的基本配置如下 1234567891011121314151617181920212223242526272829---title: Hello World cover: http://oxnuwmm3w.bkt.clouddn.com/hello-world.jpeg# 作者信息，多作者则设置为数组# 单作者author: nick: BruceYJ link: https://www.github.com/BruceYuj# 多作者author: - nick: BruceYJ link: https://www.github.com/BruceYuj - nick: minfive link: https://www.github.com/Mrminfive# 如果文章为转载文章，需要多加文章出处项editor: name: Minfive link: https://www.github.com/Mrminfive# 首页每篇文章的子标题subtitle: your subtitle# 文章标签tags: [A, B, C]# 文章分类 ,目前我自己试过只能是单个的分类，使用 [iOS, web],会出现分级，且排版显示上不对称。categories: iOS---]]></content>
@@ -39,17 +51,6 @@
     <title><![CDATA[Git操作-.gitignore相关]]></title>
     <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
     <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作1再次确保代码最新 3：git rm -r –cached .1清除本地项目目录下缓存 4: 新建or修改 .gitignore ，编辑好5: git add .6: git commit -m “add .gitignore”7: git push]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Git操作-tag相关]]></title>
-    <url>%2F2019%2F06%2F16%2Fgit-tag-commonds%2F</url>
-    <content type="text"><![CDATA[#关于git的tag操作 在Git中打标签非常简单，首先，切换到需要打标签的分支上： 12345$ git branch* dev master$ git checkout masterSwitched to branch &apos;master&apos; ##1：新增命令行输入git tag 就可以打一个新标签： $git tag &lt;tagname&gt;##2：查看 //查看所有(本地) $git tag 或者 $git show &lt;tagname&gt; 或者 $git tag -l //查看所有（远程） $git ls-remote --tags origin##3：将tag打到指定的commit记录上(比如之前的某次提交忘了打tag啊) $git tag 0.1.1 &lt;commitId&gt;##4：打上带有说明的tag [optional]可选的 $git tag -a 0.1.1 -m &quot;我是本次tag的相关说明&quot; &lt;commitId&gt;[optional]##5: 删除 tag（本地删除，比如你打错tag了） $git tag -d &lt;tagname&gt; 推送tag到远程 $git push origin &lt;tagname&gt; 或者 $git push --tags##6: 删除tag (远程删除) //先从本地删除 $git tag -d &lt;tagname&gt; //再从远程删除 $git push origin :refs/tags/&lt;tagname&gt;]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -113,6 +114,17 @@
       <tags>
         <tag>iOS</tag>
         <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git操作-tag相关]]></title>
+    <url>%2F2019%2F06%2F16%2Fgit-tag-commonds%2F</url>
+    <content type="text"><![CDATA[#关于git的tag操作 在Git中打标签非常简单，首先，切换到需要打标签的分支上： 12345$ git branch* dev master$ git checkout masterSwitched to branch &apos;master&apos; ##1：新增命令行输入git tag 就可以打一个新标签： $git tag &lt;tagname&gt;##2：查看 //查看所有(本地) $git tag 或者 $git show &lt;tagname&gt; 或者 $git tag -l //查看所有（远程） $git ls-remote --tags origin##3：将tag打到指定的commit记录上(比如之前的某次提交忘了打tag啊) $git tag 0.1.1 &lt;commitId&gt;##4：打上带有说明的tag [optional]可选的 $git tag -a 0.1.1 -m &quot;我是本次tag的相关说明&quot; &lt;commitId&gt;[optional]##5: 删除 tag（本地删除，比如你打错tag了） $git tag -d &lt;tagname&gt; 推送tag到远程 $git push origin &lt;tagname&gt; 或者 $git push --tags##6: 删除tag (远程删除) //先从本地删除 $git tag -d &lt;tagname&gt; //再从远程删除 $git push origin :refs/tags/&lt;tagname&gt;]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
