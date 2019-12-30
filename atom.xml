@@ -139,20 +139,21 @@
   </entry>
   
   <entry>
-    <title>Git操作-.gitignore相关</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/git操作-挽救gitignore/</id>
+    <title>Git操作-tag相关</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/</id>
     <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:43.340Z</updated>
+    <updated>2019-09-20T03:12:37.120Z</updated>
     
-    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作"><a href="#2：git-pull-操作" class="headerlink" title="2：git pull 操作"></a>2：git pull 操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次确保代码最新</span><br></pre></td></tr></table></figure><h4 id="3：git-rm-r-–cached"><a href="#3：git-rm-r-–cached" class="headerlink" title="3：git rm -r –cached ."></a>3：git rm -r –cached .</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除本地项目目录下缓存</span><br></pre></td></tr></table></figure><h4 id="4-新建or修改-gitignore-，编辑好"><a href="#4-新建or修改-gitignore-，编辑好" class="headerlink" title="4: 新建or修改 .gitignore ，编辑好"></a>4: 新建or修改 .gitignore ，编辑好</h4><h4 id="5-git-add"><a href="#5-git-add" class="headerlink" title="5: git add ."></a>5: git add .</h4><h4 id="6-git-commit-m-“add-gitignore”"><a href="#6-git-commit-m-“add-gitignore”" class="headerlink" title="6: git commit -m “add .gitignore”"></a>6: git commit -m “add .gitignore”</h4><h4 id="7-git-push"><a href="#7-git-push" class="headerlink" title="7: git push"></a>7: git push</h4>]]></content>
+    <content type="html"><![CDATA[<p>#关于git的tag操作</p><p>在Git中打标签非常简单，首先，切换到需要打标签的分支上：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* dev</span><br><span class="line">  master</span><br><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br></pre></td></tr></table></figure><p>##1：新增<br>命令行输入<strong>git tag <name></name></strong>就可以打一个新标签：</p><pre><code>$git tag &lt;tagname&gt;</code></pre><p>##2：查看</p><pre><code>//查看所有(本地)$git tag或者$git show &lt;tagname&gt;或者$git tag -l//查看所有（远程）$git ls-remote --tags origin</code></pre><p>##3：将tag打到指定的commit记录上(比如之前的某次提交忘了打tag啊)</p><pre><code>$git tag 0.1.1 &lt;commitId&gt;</code></pre><p>##4：打上带有说明的tag [optional]可选的</p><pre><code>$git tag -a 0.1.1 -m &quot;我是本次tag的相关说明&quot;   &lt;commitId&gt;[optional]</code></pre><p>##5: 删除 tag（本地删除，比如你打错tag了）</p><pre><code>$git tag -d &lt;tagname&gt;推送tag到远程$git push origin &lt;tagname&gt;或者$git push --tags</code></pre><p>##6: 删除tag (远程删除)</p><pre><code>//先从本地删除$git tag -d &lt;tagname&gt;//再从远程删除$git push origin :refs/tags/&lt;tagname&gt;</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
-&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
+        &lt;p&gt;#关于git的tag操作&lt;/p&gt;
+&lt;p&gt;在Git中打标签非常简单，首先，切换到需要打标签的分支上：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;lin
       
     
     </summary>
@@ -162,36 +163,6 @@
     
     
       <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac通过adb安装apk的教程</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/Mac%E9%80%9A%E8%BF%87adb%E5%AE%89%E8%A3%85apk%E7%9A%84%E6%95%99%E7%A8%8B/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/Mac通过adb安装apk的教程/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:13:04.674Z</updated>
-    
-    <content type="html"><![CDATA[<p>#Mac通过adb安装apk的教程<br>(关于mac 环境 通过adb 给安卓机（安卓系统）安装apk的教程)</p><p>#1: 环境篇</p><p>###1.1 mac上必须 安装 java 环境</p><p>可使用以下命令，查看是否安装该环境</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ java -version</span><br></pre></td></tr></table></figure><p>如果没有，请自行下载安装java环境</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#下载地址</span><br><span class="line"></span><br><span class="line">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</span><br></pre></td></tr></table></figure><p>###1.2 mac 安装 andorid sdk<br>通过以下命令安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install android-sdk</span><br></pre></td></tr></table></figure><p>###1.3 mac 安装 android-platform-tools</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install android-platform-tools</span><br><span class="line"></span><br><span class="line">#检测adb是否安装成功</span><br><span class="line">$ adb devices    //如果成功了，会出现设备列表</span><br></pre></td></tr></table></figure><p>#2: 安装篇</p><p>###2.1 方式1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ adb install &lt;apk-path&gt;</span><br><span class="line"></span><br><span class="line">#例如</span><br><span class="line">$ adb install xx/xxx/xx.apk</span><br></pre></td></tr></table></figure><p>###2.2 方式2</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd &lt;apk-path&gt;</span><br><span class="line">$ adb install xxx.apk</span><br></pre></td></tr></table></figure><p>#3: 卸载篇<br>在有的时候我们安装新包，需要先卸载旧的包，不然会提示安装失败</p><p>###3.1卸载apk</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ adb uninstall &lt;apk包名&gt;</span><br><span class="line">eg:</span><br><span class="line">$ adb uninstall cn.gowild.voiceserver.xera</span><br><span class="line"></span><br><span class="line">---如果不清楚具体包名，可通过以下方式去查看</span><br></pre></td></tr></table></figure><p>###3.2 查看已经安装的旧包的包名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">步骤如下:</span><br><span class="line">3.2.1</span><br><span class="line">$ adb shell</span><br><span class="line">$ cd data</span><br><span class="line">$ ls</span><br><span class="line">//如果此时出现 opendir failed, Permission denied,可以继续输入</span><br><span class="line">$ zhcsu ls //此时可以正常显示data目录下的内容了,如果此时没看到包名相关的文件，继续 cd data</span><br><span class="line">$ cd data</span><br><span class="line">$ ls //此时可以看到很多包文件，包括系统的包、以及第三方的包</span><br><span class="line"></span><br><span class="line">我们的包名是</span><br><span class="line">cn.gowild.xxxx</span><br><span class="line"></span><br><span class="line">找到具体包名后，继续走卸载流程，然后再重新安装，安装成功会出现 &apos;success&apos;提示，此时就大功告成了😆</span><br></pre></td></tr></table></figure><p>#4: 问题篇<br>在安装过程中出现 “ INSTALL_FAILED_ALREADY_EXISTS “ , 意思是设备上已经安装了该apk，不能重复安装，此时我们需要先卸载旧的包，然后重新安装</p><p>###4.1 卸载apk</p><pre><code>$ adb uninstall &lt;apk包名&gt;eg:$ adb uninstall cn.gowild.voiceserver.xera</code></pre><p>###4.2 卸载完后，然后再重新安装</p><pre><code>请参考 安装篇安装成功会出现 &apos;success&apos;提示，此时就大功告成了😆</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#Mac通过adb安装apk的教程&lt;br&gt;(关于mac 环境 通过adb 给安卓机（安卓系统）安装apk的教程)&lt;/p&gt;
-&lt;p&gt;#1: 环境篇&lt;/p&gt;
-&lt;p&gt;###1.1 mac上必须 安装 java 环境&lt;/p&gt;
-&lt;p&gt;可使用以下命令，查看是否安装该环境&lt;/p&gt;
-&lt;fig
-      
-    
-    </summary>
-    
-    
-      <category term="APK" scheme="https://JohnyLisir.github.io/categories/APK/"/>
-    
-    
-      <category term="APK" scheme="https://JohnyLisir.github.io/tags/APK/"/>
     
   </entry>
   
@@ -221,6 +192,36 @@
       <category term="iOS" scheme="https://JohnyLisir.github.io/tags/iOS/"/>
     
       <category term="Cocoapods" scheme="https://JohnyLisir.github.io/tags/Cocoapods/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APP与H5的交互规范</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/APP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/APP与h5同一调用规则说明/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-09-20T03:12:02.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>#为了规范化 APP与H5调用通道，采用此类型声明</p><p>APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分</p><p>##（1）APP端提供方法:<br>  方法名：jsCallNative<br>  参数：param<br>   param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架）1-1：native端注册方法 jsCallNative  (以ios为例)//原生不提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    NSLog(@&quot;Log: %@&quot;, data);}];//2:原生提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);}];js端代码param = {    code = 1001,    data = {        title: &apos;双十一活动分享&apos;,        image: &apos;url&apos;,        sharePlatfrom: &apos;QQ&apos;,        ...    }}//1：不需要返回值bridge.callHandler(&quot;jsCallNative&quot;, param)//2：需要原生提供返回值(response为 nativa的返回值)bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) {    alert(&apos;Screen height:&apos; + response)})</code></pre><p>##（2）js端提供的方法:<br>    方法名: nativeCallJs<br>    参数：param<br>    param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如: nativa需要调用js的方法2-1: h5端注册方法nativeCallJs//不给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) })//给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) {    responseCallback(document.location.toString())})2-2: native端调用(以ios为例)//没有返回值[self.bridge callHandler:@&quot;nativeCallJs&quot; data:param];//有返回值(responseData)[self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) {    NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData);}];</code></pre><p>##(3): 本次分享模块方法类型定义</p><pre><code>app分享到QQcode: 1001 分享param:</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#为了规范化 APP与H5调用通道，采用此类型声明&lt;/p&gt;
+&lt;p&gt;APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分&lt;/p&gt;
+&lt;p&gt;##（1）APP端提供方法:&lt;br&gt;  方法名：jsCallNative&lt;br&gt;  参数：p
+      
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://JohnyLisir.github.io/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="https://JohnyLisir.github.io/tags/iOS/"/>
+    
+      <category term="Web" scheme="https://JohnyLisir.github.io/tags/Web/"/>
     
   </entry>
   
@@ -283,64 +284,6 @@
   </entry>
   
   <entry>
-    <title>APP与H5的交互规范</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/APP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/APP与h5同一调用规则说明/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:02.655Z</updated>
-    
-    <content type="html"><![CDATA[<p>#为了规范化 APP与H5调用通道，采用此类型声明</p><p>APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分</p><p>##（1）APP端提供方法:<br>  方法名：jsCallNative<br>  参数：param<br>   param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架）1-1：native端注册方法 jsCallNative  (以ios为例)//原生不提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    NSLog(@&quot;Log: %@&quot;, data);}];//2:原生提供返回值的注册[self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) {    responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);}];js端代码param = {    code = 1001,    data = {        title: &apos;双十一活动分享&apos;,        image: &apos;url&apos;,        sharePlatfrom: &apos;QQ&apos;,        ...    }}//1：不需要返回值bridge.callHandler(&quot;jsCallNative&quot;, param)//2：需要原生提供返回值(response为 nativa的返回值)bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) {    alert(&apos;Screen height:&apos; + response)})</code></pre><p>##（2）js端提供的方法:<br>    方法名: nativeCallJs<br>    参数：param<br>    param = {<br>        code: 1001,<br>        data: 传递的方法参数<br>    }</p><pre><code>例如: nativa需要调用js的方法2-1: h5端注册方法nativeCallJs//不给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) })//给原生提供返回值bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) {    responseCallback(document.location.toString())})2-2: native端调用(以ios为例)//没有返回值[self.bridge callHandler:@&quot;nativeCallJs&quot; data:param];//有返回值(responseData)[self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) {    NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData);}];</code></pre><p>##(3): 本次分享模块方法类型定义</p><pre><code>app分享到QQcode: 1001 分享param:</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#为了规范化 APP与H5调用通道，采用此类型声明&lt;/p&gt;
-&lt;p&gt;APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分&lt;/p&gt;
-&lt;p&gt;##（1）APP端提供方法:&lt;br&gt;  方法名：jsCallNative&lt;br&gt;  参数：p
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://JohnyLisir.github.io/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="https://JohnyLisir.github.io/tags/iOS/"/>
-    
-      <category term="Web" scheme="https://JohnyLisir.github.io/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git操作-tag相关</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:37.120Z</updated>
-    
-    <content type="html"><![CDATA[<p>#关于git的tag操作</p><p>在Git中打标签非常简单，首先，切换到需要打标签的分支上：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* dev</span><br><span class="line">  master</span><br><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br></pre></td></tr></table></figure><p>##1：新增<br>命令行输入<strong>git tag <name></name></strong>就可以打一个新标签：</p><pre><code>$git tag &lt;tagname&gt;</code></pre><p>##2：查看</p><pre><code>//查看所有(本地)$git tag或者$git show &lt;tagname&gt;或者$git tag -l//查看所有（远程）$git ls-remote --tags origin</code></pre><p>##3：将tag打到指定的commit记录上(比如之前的某次提交忘了打tag啊)</p><pre><code>$git tag 0.1.1 &lt;commitId&gt;</code></pre><p>##4：打上带有说明的tag [optional]可选的</p><pre><code>$git tag -a 0.1.1 -m &quot;我是本次tag的相关说明&quot;   &lt;commitId&gt;[optional]</code></pre><p>##5: 删除 tag（本地删除，比如你打错tag了）</p><pre><code>$git tag -d &lt;tagname&gt;推送tag到远程$git push origin &lt;tagname&gt;或者$git push --tags</code></pre><p>##6: 删除tag (远程删除)</p><pre><code>//先从本地删除$git tag -d &lt;tagname&gt;//再从远程删除$git push origin :refs/tags/&lt;tagname&gt;</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#关于git的tag操作&lt;/p&gt;
-&lt;p&gt;在Git中打标签非常简单，首先，切换到需要打标签的分支上：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;lin
-      
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://JohnyLisir.github.io/categories/Git/"/>
-    
-    
-      <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基于Python 搭建App服务器（Tornado）</title>
     <link href="https://JohnyLisir.github.io/2019/06/16/%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)/"/>
     <id>https://JohnyLisir.github.io/2019/06/16/基于Python 搭建App服务器（Tornado)/</id>
@@ -368,6 +311,63 @@
       <category term="Python" scheme="https://JohnyLisir.github.io/tags/Python/"/>
     
       <category term="Server" scheme="https://JohnyLisir.github.io/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac通过adb安装apk的教程</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/Mac%E9%80%9A%E8%BF%87adb%E5%AE%89%E8%A3%85apk%E7%9A%84%E6%95%99%E7%A8%8B/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/Mac通过adb安装apk的教程/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-09-20T03:13:04.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Mac通过adb安装apk的教程<br>(关于mac 环境 通过adb 给安卓机（安卓系统）安装apk的教程)</p><p>#1: 环境篇</p><p>###1.1 mac上必须 安装 java 环境</p><p>可使用以下命令，查看是否安装该环境</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ java -version</span><br></pre></td></tr></table></figure><p>如果没有，请自行下载安装java环境</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#下载地址</span><br><span class="line"></span><br><span class="line">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</span><br></pre></td></tr></table></figure><p>###1.2 mac 安装 andorid sdk<br>通过以下命令安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install android-sdk</span><br></pre></td></tr></table></figure><p>###1.3 mac 安装 android-platform-tools</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install android-platform-tools</span><br><span class="line"></span><br><span class="line">#检测adb是否安装成功</span><br><span class="line">$ adb devices    //如果成功了，会出现设备列表</span><br></pre></td></tr></table></figure><p>#2: 安装篇</p><p>###2.1 方式1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ adb install &lt;apk-path&gt;</span><br><span class="line"></span><br><span class="line">#例如</span><br><span class="line">$ adb install xx/xxx/xx.apk</span><br></pre></td></tr></table></figure><p>###2.2 方式2</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd &lt;apk-path&gt;</span><br><span class="line">$ adb install xxx.apk</span><br></pre></td></tr></table></figure><p>#3: 卸载篇<br>在有的时候我们安装新包，需要先卸载旧的包，不然会提示安装失败</p><p>###3.1卸载apk</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ adb uninstall &lt;apk包名&gt;</span><br><span class="line">eg:</span><br><span class="line">$ adb uninstall cn.gowild.voiceserver.xera</span><br><span class="line"></span><br><span class="line">---如果不清楚具体包名，可通过以下方式去查看</span><br></pre></td></tr></table></figure><p>###3.2 查看已经安装的旧包的包名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">步骤如下:</span><br><span class="line">3.2.1</span><br><span class="line">$ adb shell</span><br><span class="line">$ cd data</span><br><span class="line">$ ls</span><br><span class="line">//如果此时出现 opendir failed, Permission denied,可以继续输入</span><br><span class="line">$ zhcsu ls //此时可以正常显示data目录下的内容了,如果此时没看到包名相关的文件，继续 cd data</span><br><span class="line">$ cd data</span><br><span class="line">$ ls //此时可以看到很多包文件，包括系统的包、以及第三方的包</span><br><span class="line"></span><br><span class="line">我们的包名是</span><br><span class="line">cn.gowild.xxxx</span><br><span class="line"></span><br><span class="line">找到具体包名后，继续走卸载流程，然后再重新安装，安装成功会出现 &apos;success&apos;提示，此时就大功告成了😆</span><br></pre></td></tr></table></figure><p>#4: 问题篇<br>在安装过程中出现 “ INSTALL_FAILED_ALREADY_EXISTS “ , 意思是设备上已经安装了该apk，不能重复安装，此时我们需要先卸载旧的包，然后重新安装</p><p>###4.1 卸载apk</p><pre><code>$ adb uninstall &lt;apk包名&gt;eg:$ adb uninstall cn.gowild.voiceserver.xera</code></pre><p>###4.2 卸载完后，然后再重新安装</p><pre><code>请参考 安装篇安装成功会出现 &apos;success&apos;提示，此时就大功告成了😆</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#Mac通过adb安装apk的教程&lt;br&gt;(关于mac 环境 通过adb 给安卓机（安卓系统）安装apk的教程)&lt;/p&gt;
+&lt;p&gt;#1: 环境篇&lt;/p&gt;
+&lt;p&gt;###1.1 mac上必须 安装 java 环境&lt;/p&gt;
+&lt;p&gt;可使用以下命令，查看是否安装该环境&lt;/p&gt;
+&lt;fig
+      
+    
+    </summary>
+    
+    
+      <category term="APK" scheme="https://JohnyLisir.github.io/categories/APK/"/>
+    
+    
+      <category term="APK" scheme="https://JohnyLisir.github.io/tags/APK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git操作-.gitignore相关</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/git操作-挽救gitignore/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-12-30T12:20:14.767Z</updated>
+    
+    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作"><a href="#2：git-pull-操作" class="headerlink" title="2：git pull 操作"></a>2：git pull 操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次确保代码最新</span><br></pre></td></tr></table></figure><h4 id="3：git-rm-r-–cached"><a href="#3：git-rm-r-–cached" class="headerlink" title="3：git rm -r –cached ."></a>3：git rm -r –cached .</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除本地项目目录下缓存</span><br></pre></td></tr></table></figure><h4 id="4-编辑-gitignore-，"><a href="#4-编辑-gitignore-，" class="headerlink" title="4: 编辑 .gitignore ，"></a>4: 编辑 .gitignore ，</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改好需要修改的部分, 例如我要将之前忽略的pods全部提交到服务器，则 #Pods/</span><br></pre></td></tr></table></figure><h4 id="5-git-add-gitignore"><a href="#5-git-add-gitignore" class="headerlink" title="5: git add .gitignore"></a>5: git add .gitignore</h4><h4 id="6-git-commit-m-“add-gitignore”"><a href="#6-git-commit-m-“add-gitignore”" class="headerlink" title="6: git commit -m “add .gitignore”"></a>6: git commit -m “add .gitignore”</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">先只提交 .gitignore文件到远程服务器</span><br></pre></td></tr></table></figure><h4 id="7-git-push"><a href="#7-git-push" class="headerlink" title="7: git push"></a>7: git push</h4><h4 id="8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成"><a href="#8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成" class="headerlink" title="8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成."></a>8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成.</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
+&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://JohnyLisir.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
     
   </entry>
   
