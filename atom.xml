@@ -139,6 +139,33 @@
   </entry>
   
   <entry>
+    <title>Git操作-.gitignore相关</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/git操作-挽救gitignore/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-12-30T12:27:40.458Z</updated>
+    
+    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作-再次确保代码最新"><a href="#2：git-pull-操作-再次确保代码最新" class="headerlink" title="2：git pull 操作, 再次确保代码最新"></a>2：git pull 操作, 再次确保代码最新</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure><h4 id="3：清除本地项目目录下缓存-为修改ignore做准备"><a href="#3：清除本地项目目录下缓存-为修改ignore做准备" class="headerlink" title="3：清除本地项目目录下缓存,为修改ignore做准备"></a>3：清除本地项目目录下缓存,为修改ignore做准备</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br></pre></td></tr></table></figure><h4 id="4-编辑-gitignore-，"><a href="#4-编辑-gitignore-，" class="headerlink" title="4: 编辑 .gitignore ，"></a>4: 编辑 .gitignore ，</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改好需要修改的部分, 例如我要将之前忽略的pods全部提交到服务器，则 #Pods/</span><br></pre></td></tr></table></figure><h4 id="5-添加修改好的-gitignore到本地暂存空间"><a href="#5-添加修改好的-gitignore到本地暂存空间" class="headerlink" title="5: 添加修改好的 .gitignore到本地暂存空间"></a>5: 添加修改好的 .gitignore到本地暂存空间</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .gitignore</span><br></pre></td></tr></table></figure><h4 id="6-commit-gitignore-到本地仓库"><a href="#6-commit-gitignore-到本地仓库" class="headerlink" title="6: commit .gitignore 到本地仓库"></a>6: commit .gitignore 到本地仓库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;update .gitignore&quot;</span><br></pre></td></tr></table></figure><h4 id="7-将-gitignore文件到远程服务器"><a href="#7-将-gitignore文件到远程服务器" class="headerlink" title="7: 将 .gitignore文件到远程服务器"></a>7: 将 .gitignore文件到远程服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure><h4 id="8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成"><a href="#8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成" class="headerlink" title="8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成."></a>8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成.</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;补充提交Pods/到服务器&quot;</span><br><span class="line">git pull </span><br><span class="line">git push</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
+&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://JohnyLisir.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git操作-tag相关</title>
     <link href="https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/"/>
     <id>https://JohnyLisir.github.io/2019/06/16/git-tag-commonds/</id>
@@ -163,35 +190,6 @@
     
     
       <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cocoapods私有库使用-进阶之二进制</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/Cocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/Cocoapods私有库使用-进阶之二进制/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:12:22.983Z</updated>
-    
-    <content type="html"><![CDATA[<p>#Cocoapods私有库使用-进阶之二进制</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">参考：</span><br><span class="line">//Pod二进制化</span><br><span class="line">https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2</span><br><span class="line">//iOS里的导入头文件</span><br><span class="line">https://www.zybuluo.com/qidiandasheng/note/602118</span><br><span class="line"></span><br><span class="line">说明：已经制作好的私有pod，每次pod install 下来都是源码，这在第一次编译时会大大增加编译时间，如果我们预先将对应的版本的pod源码制作成framework，一起提供给pod，当我们使用</span><br><span class="line">use_lib=1 pod install 时，切换成framework引入而不是源码引入，这样在编译的时候将大大提高编译速度，体验更好。（缺点：不能进行源码端点调试）</span><br></pre></td></tr></table></figure><p>##1: 使用cocoapods-packager 将我们的源码制作成framework</p><p>当然，这里其实也可以制作程 .a 文件，随你选择，因为我们项目使用了oc与swift混编，podfile中使用了 ‘use_frameworks!’,所以这里就选择制作成framework<br>详细的命令使用说明: <a href="https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2" target="_blank" rel="noopener">https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1.1 使用cocoapods-packager,以 &apos;GWNetworkFramework.podspec&apos;为例</span><br><span class="line"></span><br><span class="line">cd 到我们pod项目的根目录下（包含 .podspec文件），执行:</span><br><span class="line"></span><br><span class="line">$pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1.2 执行此命令后，会在根目录下生成一个以podName-&#123;version&#125;命名的的文件夹,找到ios-&gt;xxxxframework 目录下，可以看到生成好的  xxx.framework,</span><br><span class="line">这里我们可以查看一下这个framework是否正常，比如暴露出来的头文件跟源码暴露出来的头文件，是不是一致，有没有缺少关键头文件 podName.h 文件（这个文件我们一般做整体头文件配置的，很关键哦）</span><br><span class="line"></span><br><span class="line">1.3 在根目录下新建文件夹 Frameworks-&gt;version(对应版本号,比如0.1.4), 将我们刚刚利用对应version生成的framework，copy到frameworks-&gt;version的目录下</span><br><span class="line"></span><br><span class="line">1.4 在pod项目中测试 二进制与源码的切换</span><br><span class="line">删除podDemo项目中的Pods文件夹（因为之前已经使用pod install，安装了源码版本的）</span><br><span class="line"></span><br><span class="line">$pod package GWLogFramework.podspec --force --embedded --no-mangle --exclude-deps  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git</span><br><span class="line">$pod repo push gowild-app-eve_app_ios_spec  GWLogFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#Cocoapods私有库使用-进阶之二进制&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
-      
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="https://JohnyLisir.github.io/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="https://JohnyLisir.github.io/tags/iOS/"/>
-    
-      <category term="Cocoapods" scheme="https://JohnyLisir.github.io/tags/Cocoapods/"/>
     
   </entry>
   
@@ -284,37 +282,6 @@
   </entry>
   
   <entry>
-    <title>基于Python 搭建App服务器（Tornado）</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/基于Python 搭建App服务器（Tornado)/</id>
-    <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-09-20T03:11:44.931Z</updated>
-    
-    <content type="html"><![CDATA[<p>#基于Python 搭建App服务器（Tornado）</p><p><strong>说明</strong>：该教程基于CentOS<strong>7.2 64</strong>位</p><p>##(1):环境配置(基于CentOS操作系统)</p><p>CentOS 7.2 操作系统自带的 Python 版本为 2.7.5，本小册将以 Python 3.6.2 的版本进行讲解。即安装完 Python 3.6.2 后，系统上同时存在 Python 2.7.5 和 Python 3.6.2 两个版本。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">1：安装依赖包</span><br><span class="line"></span><br><span class="line">$yum -y groupinstall &quot;Development tools&quot;</span><br><span class="line"></span><br><span class="line">$yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel</span><br><span class="line"></span><br><span class="line">2: 下载Python 3.6.2</span><br><span class="line"></span><br><span class="line">$wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz</span><br><span class="line">(注意：)如果提示 wget 命令无法找到，请先执行 yum -y install wget ,进行安装</span><br><span class="line"></span><br><span class="line">3: 创建安装目录</span><br><span class="line">$mkdir /usr/local/python3</span><br><span class="line"></span><br><span class="line">4: 安装gcc</span><br><span class="line">由于 Python 3.6.2 的编译需要编译环境，故需安装 gcc。</span><br><span class="line"></span><br><span class="line">$yum -y install gcc</span><br><span class="line"></span><br><span class="line">5: 安装Python3.6.2</span><br><span class="line">解压 Python 3.6.2 并安装在 /usr/local/python3 目录下。</span><br><span class="line"></span><br><span class="line">$tar -xvJf  Python-3.6.2.tar.xz</span><br><span class="line">$cd Python-3.6.2</span><br><span class="line">$./configure --prefix=/usr/local/python3</span><br><span class="line">$make &amp;&amp; make install</span><br><span class="line"></span><br><span class="line">6：创建软连</span><br><span class="line"></span><br><span class="line">$ln -s /usr/local/python3/bin/python3 /usr/bin/python3</span><br><span class="line">$ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3</span><br><span class="line"></span><br><span class="line">7: 测试 python3</span><br><span class="line"></span><br><span class="line">$python3 --version</span><br></pre></td></tr></table></figure><p>##(2): 安装Tornado<br>CentOS 下还无法直接使用 yum install tornado，但可以使用 pip 安装 Tornado。先执行 pip3 install –upgrade pip 命令升级 pip，再执行 pip3 install tornado 命令安装 Tornado。</p><p>测试Tornado 安装是否成功:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$python3</span><br><span class="line">$import tornado</span><br></pre></td></tr></table></figure><p>##(3): 安装MySQL</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$yum install mysql-devel</span><br><span class="line">$wget http://dev.mysql.com/get/mysql-community-$release-el7-5.noarch.rpm</span><br><span class="line">$rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">$yum -y install mysql-community-server</span><br><span class="line">$pip3 install mysqlclient</span><br><span class="line">$service mysqld restart</span><br><span class="line"></span><br><span class="line">#测试 MySQL 是否安装成功</span><br><span class="line">$systemctl status mysqld.service</span><br></pre></td></tr></table></figure><p>##(4): 安装 SQLAlchemy</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$pip3 install SQLAlchemy</span><br><span class="line"></span><br><span class="line">#测试 SQLAlchemy 是否安装成功</span><br><span class="line">$python3</span><br><span class="line">$import sqlalchemy</span><br></pre></td></tr></table></figure><p>##(5): 代码编辑器<br>mac 上推荐使用 VSCode ，搭配ftp 插件使用</p><p>##(6): 创建 服务器工程 目录 demo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在root 根目录下,</span><br><span class="line">$cd /data (没有data目录的话, cd / ,mkdir data,然后 cd ~,再cd /data)</span><br><span class="line">#创建 demo文件夹</span><br><span class="line">$mkdir demo</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#基于Python 搭建App服务器（Tornado）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：该教程基于CentOS&lt;strong&gt;7.2 64&lt;/strong&gt;位&lt;/p&gt;
-&lt;p&gt;##(1):环境配置(基于CentOS操作系统)&lt;/p&gt;
-&lt;p&gt;CentOS 
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://JohnyLisir.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://JohnyLisir.github.io/tags/Python/"/>
-    
-      <category term="Server" scheme="https://JohnyLisir.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac通过adb安装apk的教程</title>
     <link href="https://JohnyLisir.github.io/2019/06/16/Mac%E9%80%9A%E8%BF%87adb%E5%AE%89%E8%A3%85apk%E7%9A%84%E6%95%99%E7%A8%8B/"/>
     <id>https://JohnyLisir.github.io/2019/06/16/Mac通过adb安装apk的教程/</id>
@@ -345,29 +312,62 @@
   </entry>
   
   <entry>
-    <title>Git操作-.gitignore相关</title>
-    <link href="https://JohnyLisir.github.io/2019/06/16/git%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore/"/>
-    <id>https://JohnyLisir.github.io/2019/06/16/git操作-挽救gitignore/</id>
+    <title>Cocoapods私有库使用-进阶之二进制</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/Cocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/Cocoapods私有库使用-进阶之二进制/</id>
     <published>2019-06-16T02:44:29.000Z</published>
-    <updated>2019-12-30T12:20:14.767Z</updated>
+    <updated>2019-09-20T03:12:22.983Z</updated>
     
-    <content type="html"><![CDATA[<p>##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！</p><h4 id="1：在master分支下"><a href="#1：在master分支下" class="headerlink" title="1：在master分支下"></a>1：在master分支下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">确保最新代码，且本地没有任何改动及需要提交的</span><br></pre></td></tr></table></figure><h4 id="2：git-pull-操作"><a href="#2：git-pull-操作" class="headerlink" title="2：git pull 操作"></a>2：git pull 操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次确保代码最新</span><br></pre></td></tr></table></figure><h4 id="3：git-rm-r-–cached"><a href="#3：git-rm-r-–cached" class="headerlink" title="3：git rm -r –cached ."></a>3：git rm -r –cached .</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除本地项目目录下缓存</span><br></pre></td></tr></table></figure><h4 id="4-编辑-gitignore-，"><a href="#4-编辑-gitignore-，" class="headerlink" title="4: 编辑 .gitignore ，"></a>4: 编辑 .gitignore ，</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改好需要修改的部分, 例如我要将之前忽略的pods全部提交到服务器，则 #Pods/</span><br></pre></td></tr></table></figure><h4 id="5-git-add-gitignore"><a href="#5-git-add-gitignore" class="headerlink" title="5: git add .gitignore"></a>5: git add .gitignore</h4><h4 id="6-git-commit-m-“add-gitignore”"><a href="#6-git-commit-m-“add-gitignore”" class="headerlink" title="6: git commit -m “add .gitignore”"></a>6: git commit -m “add .gitignore”</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">先只提交 .gitignore文件到远程服务器</span><br></pre></td></tr></table></figure><h4 id="7-git-push"><a href="#7-git-push" class="headerlink" title="7: git push"></a>7: git push</h4><h4 id="8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成"><a href="#8-此时再-git-add-将Pods-加入到仓库，再按照-git-commit-、git-push-提交上去即可完成" class="headerlink" title="8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成."></a>8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成.</h4>]]></content>
+    <content type="html"><![CDATA[<p>#Cocoapods私有库使用-进阶之二进制</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">参考：</span><br><span class="line">//Pod二进制化</span><br><span class="line">https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2</span><br><span class="line">//iOS里的导入头文件</span><br><span class="line">https://www.zybuluo.com/qidiandasheng/note/602118</span><br><span class="line"></span><br><span class="line">说明：已经制作好的私有pod，每次pod install 下来都是源码，这在第一次编译时会大大增加编译时间，如果我们预先将对应的版本的pod源码制作成framework，一起提供给pod，当我们使用</span><br><span class="line">use_lib=1 pod install 时，切换成framework引入而不是源码引入，这样在编译的时候将大大提高编译速度，体验更好。（缺点：不能进行源码端点调试）</span><br></pre></td></tr></table></figure><p>##1: 使用cocoapods-packager 将我们的源码制作成framework</p><p>当然，这里其实也可以制作程 .a 文件，随你选择，因为我们项目使用了oc与swift混编，podfile中使用了 ‘use_frameworks!’,所以这里就选择制作成framework<br>详细的命令使用说明: <a href="https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2" target="_blank" rel="noopener">https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1.1 使用cocoapods-packager,以 &apos;GWNetworkFramework.podspec&apos;为例</span><br><span class="line"></span><br><span class="line">cd 到我们pod项目的根目录下（包含 .podspec文件），执行:</span><br><span class="line"></span><br><span class="line">$pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1.2 执行此命令后，会在根目录下生成一个以podName-&#123;version&#125;命名的的文件夹,找到ios-&gt;xxxxframework 目录下，可以看到生成好的  xxx.framework,</span><br><span class="line">这里我们可以查看一下这个framework是否正常，比如暴露出来的头文件跟源码暴露出来的头文件，是不是一致，有没有缺少关键头文件 podName.h 文件（这个文件我们一般做整体头文件配置的，很关键哦）</span><br><span class="line"></span><br><span class="line">1.3 在根目录下新建文件夹 Frameworks-&gt;version(对应版本号,比如0.1.4), 将我们刚刚利用对应version生成的framework，copy到frameworks-&gt;version的目录下</span><br><span class="line"></span><br><span class="line">1.4 在pod项目中测试 二进制与源码的切换</span><br><span class="line">删除podDemo项目中的Pods文件夹（因为之前已经使用pod install，安装了源码版本的）</span><br><span class="line"></span><br><span class="line">$pod package GWLogFramework.podspec --force --embedded --no-mangle --exclude-deps  --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git</span><br><span class="line">$pod repo push gowild-app-eve_app_ios_spec  GWLogFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！&lt;/p&gt;
-&lt;h4 id=&quot;1：在master分支下&quot;&gt;&lt;a href=&quot;#1：在master分支下&quot; class=&quot;headerlink&quot; t
+        &lt;p&gt;#Cocoapods私有库使用-进阶之二进制&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
       
     
     </summary>
     
     
-      <category term="Git" scheme="https://JohnyLisir.github.io/categories/Git/"/>
+      <category term="iOS" scheme="https://JohnyLisir.github.io/categories/iOS/"/>
     
     
-      <category term="Git" scheme="https://JohnyLisir.github.io/tags/Git/"/>
+      <category term="iOS" scheme="https://JohnyLisir.github.io/tags/iOS/"/>
+    
+      <category term="Cocoapods" scheme="https://JohnyLisir.github.io/tags/Cocoapods/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Python 搭建App服务器（Tornado）</title>
+    <link href="https://JohnyLisir.github.io/2019/06/16/%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)/"/>
+    <id>https://JohnyLisir.github.io/2019/06/16/基于Python 搭建App服务器（Tornado)/</id>
+    <published>2019-06-16T02:44:29.000Z</published>
+    <updated>2019-09-20T03:11:44.931Z</updated>
+    
+    <content type="html"><![CDATA[<p>#基于Python 搭建App服务器（Tornado）</p><p><strong>说明</strong>：该教程基于CentOS<strong>7.2 64</strong>位</p><p>##(1):环境配置(基于CentOS操作系统)</p><p>CentOS 7.2 操作系统自带的 Python 版本为 2.7.5，本小册将以 Python 3.6.2 的版本进行讲解。即安装完 Python 3.6.2 后，系统上同时存在 Python 2.7.5 和 Python 3.6.2 两个版本。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">1：安装依赖包</span><br><span class="line"></span><br><span class="line">$yum -y groupinstall &quot;Development tools&quot;</span><br><span class="line"></span><br><span class="line">$yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel</span><br><span class="line"></span><br><span class="line">2: 下载Python 3.6.2</span><br><span class="line"></span><br><span class="line">$wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz</span><br><span class="line">(注意：)如果提示 wget 命令无法找到，请先执行 yum -y install wget ,进行安装</span><br><span class="line"></span><br><span class="line">3: 创建安装目录</span><br><span class="line">$mkdir /usr/local/python3</span><br><span class="line"></span><br><span class="line">4: 安装gcc</span><br><span class="line">由于 Python 3.6.2 的编译需要编译环境，故需安装 gcc。</span><br><span class="line"></span><br><span class="line">$yum -y install gcc</span><br><span class="line"></span><br><span class="line">5: 安装Python3.6.2</span><br><span class="line">解压 Python 3.6.2 并安装在 /usr/local/python3 目录下。</span><br><span class="line"></span><br><span class="line">$tar -xvJf  Python-3.6.2.tar.xz</span><br><span class="line">$cd Python-3.6.2</span><br><span class="line">$./configure --prefix=/usr/local/python3</span><br><span class="line">$make &amp;&amp; make install</span><br><span class="line"></span><br><span class="line">6：创建软连</span><br><span class="line"></span><br><span class="line">$ln -s /usr/local/python3/bin/python3 /usr/bin/python3</span><br><span class="line">$ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3</span><br><span class="line"></span><br><span class="line">7: 测试 python3</span><br><span class="line"></span><br><span class="line">$python3 --version</span><br></pre></td></tr></table></figure><p>##(2): 安装Tornado<br>CentOS 下还无法直接使用 yum install tornado，但可以使用 pip 安装 Tornado。先执行 pip3 install –upgrade pip 命令升级 pip，再执行 pip3 install tornado 命令安装 Tornado。</p><p>测试Tornado 安装是否成功:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$python3</span><br><span class="line">$import tornado</span><br></pre></td></tr></table></figure><p>##(3): 安装MySQL</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$yum install mysql-devel</span><br><span class="line">$wget http://dev.mysql.com/get/mysql-community-$release-el7-5.noarch.rpm</span><br><span class="line">$rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">$yum -y install mysql-community-server</span><br><span class="line">$pip3 install mysqlclient</span><br><span class="line">$service mysqld restart</span><br><span class="line"></span><br><span class="line">#测试 MySQL 是否安装成功</span><br><span class="line">$systemctl status mysqld.service</span><br></pre></td></tr></table></figure><p>##(4): 安装 SQLAlchemy</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$pip3 install SQLAlchemy</span><br><span class="line"></span><br><span class="line">#测试 SQLAlchemy 是否安装成功</span><br><span class="line">$python3</span><br><span class="line">$import sqlalchemy</span><br></pre></td></tr></table></figure><p>##(5): 代码编辑器<br>mac 上推荐使用 VSCode ，搭配ftp 插件使用</p><p>##(6): 创建 服务器工程 目录 demo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在root 根目录下,</span><br><span class="line">$cd /data (没有data目录的话, cd / ,mkdir data,然后 cd ~,再cd /data)</span><br><span class="line">#创建 demo文件夹</span><br><span class="line">$mkdir demo</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#基于Python 搭建App服务器（Tornado）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：该教程基于CentOS&lt;strong&gt;7.2 64&lt;/strong&gt;位&lt;/p&gt;
+&lt;p&gt;##(1):环境配置(基于CentOS操作系统)&lt;/p&gt;
+&lt;p&gt;CentOS 
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://JohnyLisir.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://JohnyLisir.github.io/tags/Python/"/>
+    
+      <category term="Server" scheme="https://JohnyLisir.github.io/tags/Server/"/>
     
   </entry>
   
