@@ -48,17 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Git操作-.gitignore相关]]></title>
-    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
-    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作, 再次确保代码最新1git pull 3：清除本地项目目录下缓存,为修改ignore做准备1git rm -r --cached . 4: 编辑 .gitignore ，1修改好需要修改的部分, 例如我要将之前忽略的pods全部提交到服务器，则 #Pods/ 5: 添加修改好的 .gitignore到本地暂存空间1git add .gitignore 6: commit .gitignore 到本地仓库1git commit -m &quot;update .gitignore&quot; 7: 将 .gitignore文件到远程服务器1git push 8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成.1234git add .git commit -m &quot;补充提交Pods/到服务器&quot;git pull git push]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Git操作-tag相关]]></title>
     <url>%2F2019%2F06%2F16%2Fgit-tag-commonds%2F</url>
     <content type="text"><![CDATA[#关于git的tag操作 在Git中打标签非常简单，首先，切换到需要打标签的分支上： 12345$ git branch* dev master$ git checkout masterSwitched to branch &apos;master&apos; ##1：新增命令行输入git tag 就可以打一个新标签： $git tag &lt;tagname&gt;##2：查看 //查看所有(本地) $git tag 或者 $git show &lt;tagname&gt; 或者 $git tag -l //查看所有（远程） $git ls-remote --tags origin##3：将tag打到指定的commit记录上(比如之前的某次提交忘了打tag啊) $git tag 0.1.1 &lt;commitId&gt;##4：打上带有说明的tag [optional]可选的 $git tag -a 0.1.1 -m &quot;我是本次tag的相关说明&quot; &lt;commitId&gt;[optional]##5: 删除 tag（本地删除，比如你打错tag了） $git tag -d &lt;tagname&gt; 推送tag到远程 $git push origin &lt;tagname&gt; 或者 $git push --tags##6: 删除tag (远程删除) //先从本地删除 $git tag -d &lt;tagname&gt; //再从远程删除 $git push origin :refs/tags/&lt;tagname&gt;]]></content>
@@ -70,15 +59,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[APP与H5的交互规范]]></title>
-    <url>%2F2019%2F06%2F16%2FAPP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E%2F</url>
-    <content type="text"><![CDATA[#为了规范化 APP与H5调用通道，采用此类型声明 APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分 ##（1）APP端提供方法: 方法名：jsCallNative 参数：param param = { code: 1001, data: 传递的方法参数 } 例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架） 1-1：native端注册方法 jsCallNative (以ios为例) //原生不提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { NSLog(@&quot;Log: %@&quot;, data); }]; //2:原生提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]); }]; js端代码 param = { code = 1001, data = { title: &apos;双十一活动分享&apos;, image: &apos;url&apos;, sharePlatfrom: &apos;QQ&apos;, ... } } //1：不需要返回值 bridge.callHandler(&quot;jsCallNative&quot;, param) //2：需要原生提供返回值(response为 nativa的返回值) bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) { alert(&apos;Screen height:&apos; + response) })##（2）js端提供的方法: 方法名: nativeCallJs 参数：param param = { code: 1001, data: 传递的方法参数 } 例如: nativa需要调用js的方法 2-1: h5端注册方法nativeCallJs //不给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) }) //给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) { responseCallback(document.location.toString()) }) 2-2: native端调用(以ios为例) //没有返回值 [self.bridge callHandler:@&quot;nativeCallJs&quot; data:param]; //有返回值(responseData) [self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) { NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData); }];##(3): 本次分享模块方法类型定义 app分享到QQ code: 1001 分享 param:]]></content>
+    <title><![CDATA[Git操作-.gitignore相关]]></title>
+    <url>%2F2019%2F06%2F16%2Fgit%E6%93%8D%E4%BD%9C-%E6%8C%BD%E6%95%91gitignore%2F</url>
+    <content type="text"><![CDATA[##对于那种已经提交到gitlab上的工程，前期 .gitignore 没配置好，导致部分该忽略的文件没忽略，这里给出急救教程！！！ 1：在master分支下1确保最新代码，且本地没有任何改动及需要提交的 2：git pull 操作, 再次确保代码最新1git pull 3：清除本地项目目录下缓存,为修改ignore做准备1git rm -r --cached . 4: 编辑 .gitignore ，1修改好需要修改的部分, 例如我要将之前忽略的pods全部提交到服务器，则 #Pods/ 5: 添加修改好的 .gitignore到本地暂存空间1git add .gitignore 6: commit .gitignore 到本地仓库1git commit -m &quot;update .gitignore&quot; 7: 将 .gitignore文件到远程服务器1git push 8: 此时再 git add . , 将Pods/ 加入到仓库，再按照 git commit 、git push 提交上去即可完成.1234git add .git commit -m &quot;补充提交Pods/到服务器&quot;git pull git push]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Cocoapods私有库使用-进阶之二进制]]></title>
+    <url>%2F2019%2F06%2F16%2FCocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%2F</url>
+    <content type="text"><![CDATA[#Cocoapods私有库使用-进阶之二进制 12345678参考：//Pod二进制化https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2//iOS里的导入头文件https://www.zybuluo.com/qidiandasheng/note/602118说明：已经制作好的私有pod，每次pod install 下来都是源码，这在第一次编译时会大大增加编译时间，如果我们预先将对应的版本的pod源码制作成framework，一起提供给pod，当我们使用use_lib=1 pod install 时，切换成framework引入而不是源码引入，这样在编译的时候将大大提高编译速度，体验更好。（缺点：不能进行源码端点调试） ##1: 使用cocoapods-packager 将我们的源码制作成framework 当然，这里其实也可以制作程 .a 文件，随你选择，因为我们项目使用了oc与swift混编，podfile中使用了 ‘use_frameworks!’,所以这里就选择制作成framework详细的命令使用说明: https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2 12345678910111213141516171.1 使用cocoapods-packager,以 &apos;GWNetworkFramework.podspec&apos;为例cd 到我们pod项目的根目录下（包含 .podspec文件），执行:$pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git1.2 执行此命令后，会在根目录下生成一个以podName-&#123;version&#125;命名的的文件夹,找到ios-&gt;xxxxframework 目录下，可以看到生成好的 xxx.framework,这里我们可以查看一下这个framework是否正常，比如暴露出来的头文件跟源码暴露出来的头文件，是不是一致，有没有缺少关键头文件 podName.h 文件（这个文件我们一般做整体头文件配置的，很关键哦）1.3 在根目录下新建文件夹 Frameworks-&gt;version(对应版本号,比如0.1.4), 将我们刚刚利用对应version生成的framework，copy到frameworks-&gt;version的目录下1.4 在pod项目中测试 二进制与源码的切换删除podDemo项目中的Pods文件夹（因为之前已经使用pod install，安装了源码版本的）$pod package GWLogFramework.podspec --force --embedded --no-mangle --exclude-deps --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git$pod repo push gowild-app-eve_app_ios_spec GWLogFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;]]></content>
       <categories>
         <category>iOS</category>
       </categories>
       <tags>
         <tag>iOS</tag>
-        <tag>Web</tag>
+        <tag>Cocoapods</tag>
       </tags>
   </entry>
   <entry>
@@ -90,6 +90,18 @@
       </categories>
       <tags>
         <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[基于Python 搭建App服务器（Tornado）]]></title>
+    <url>%2F2019%2F06%2F16%2F%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)%2F</url>
+    <content type="text"><![CDATA[#基于Python 搭建App服务器（Tornado） 说明：该教程基于CentOS7.2 64位 ##(1):环境配置(基于CentOS操作系统) CentOS 7.2 操作系统自带的 Python 版本为 2.7.5，本小册将以 Python 3.6.2 的版本进行讲解。即安装完 Python 3.6.2 后，系统上同时存在 Python 2.7.5 和 Python 3.6.2 两个版本。 12345678910111213141516171819202122232425262728293031323334351：安装依赖包$yum -y groupinstall &quot;Development tools&quot;$yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel2: 下载Python 3.6.2$wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz(注意：)如果提示 wget 命令无法找到，请先执行 yum -y install wget ,进行安装3: 创建安装目录$mkdir /usr/local/python34: 安装gcc由于 Python 3.6.2 的编译需要编译环境，故需安装 gcc。$yum -y install gcc5: 安装Python3.6.2解压 Python 3.6.2 并安装在 /usr/local/python3 目录下。$tar -xvJf Python-3.6.2.tar.xz$cd Python-3.6.2$./configure --prefix=/usr/local/python3$make &amp;&amp; make install6：创建软连$ln -s /usr/local/python3/bin/python3 /usr/bin/python3$ln -s /usr/local/python3/bin/pip3 /usr/bin/pip37: 测试 python3$python3 --version ##(2): 安装TornadoCentOS 下还无法直接使用 yum install tornado，但可以使用 pip 安装 Tornado。先执行 pip3 install –upgrade pip 命令升级 pip，再执行 pip3 install tornado 命令安装 Tornado。 测试Tornado 安装是否成功: 12$python3$import tornado ##(3): 安装MySQL 123456789$yum install mysql-devel$wget http://dev.mysql.com/get/mysql-community-$release-el7-5.noarch.rpm$rpm -ivh mysql-community-release-el7-5.noarch.rpm$yum -y install mysql-community-server$pip3 install mysqlclient$service mysqld restart#测试 MySQL 是否安装成功$systemctl status mysqld.service ##(4): 安装 SQLAlchemy 12345$pip3 install SQLAlchemy#测试 SQLAlchemy 是否安装成功$python3$import sqlalchemy ##(5): 代码编辑器mac 上推荐使用 VSCode ，搭配ftp 插件使用 ##(6): 创建 服务器工程 目录 demo 1234在root 根目录下,$cd /data (没有data目录的话, cd / ,mkdir data,然后 cd ~,再cd /data)#创建 demo文件夹$mkdir demo]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -116,27 +128,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Cocoapods私有库使用-进阶之二进制]]></title>
-    <url>%2F2019%2F06%2F16%2FCocoapods%E7%A7%81%E6%9C%89%E5%BA%93%E4%BD%BF%E7%94%A8-%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%2F</url>
-    <content type="text"><![CDATA[#Cocoapods私有库使用-进阶之二进制 12345678参考：//Pod二进制化https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2//iOS里的导入头文件https://www.zybuluo.com/qidiandasheng/note/602118说明：已经制作好的私有pod，每次pod install 下来都是源码，这在第一次编译时会大大增加编译时间，如果我们预先将对应的版本的pod源码制作成framework，一起提供给pod，当我们使用use_lib=1 pod install 时，切换成framework引入而不是源码引入，这样在编译的时候将大大提高编译速度，体验更好。（缺点：不能进行源码端点调试） ##1: 使用cocoapods-packager 将我们的源码制作成framework 当然，这里其实也可以制作程 .a 文件，随你选择，因为我们项目使用了oc与swift混编，podfile中使用了 ‘use_frameworks!’,所以这里就选择制作成framework详细的命令使用说明: https://www.zybuluo.com/qidiandasheng/note/595740#%E6%BA%90%E7%A0%81%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%87%E6%8D%A2 12345678910111213141516171.1 使用cocoapods-packager,以 &apos;GWNetworkFramework.podspec&apos;为例cd 到我们pod项目的根目录下（包含 .podspec文件），执行:$pod package GWNetworkFramework.podspec --force --embedded --no-mangle --exclude-deps --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git1.2 执行此命令后，会在根目录下生成一个以podName-&#123;version&#125;命名的的文件夹,找到ios-&gt;xxxxframework 目录下，可以看到生成好的 xxx.framework,这里我们可以查看一下这个framework是否正常，比如暴露出来的头文件跟源码暴露出来的头文件，是不是一致，有没有缺少关键头文件 podName.h 文件（这个文件我们一般做整体头文件配置的，很关键哦）1.3 在根目录下新建文件夹 Frameworks-&gt;version(对应版本号,比如0.1.4), 将我们刚刚利用对应version生成的framework，copy到frameworks-&gt;version的目录下1.4 在pod项目中测试 二进制与源码的切换删除podDemo项目中的Pods文件夹（因为之前已经使用pod install，安装了源码版本的）$pod package GWLogFramework.podspec --force --embedded --no-mangle --exclude-deps --spec-sources=http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git$pod repo push gowild-app-eve_app_ios_spec GWLogFramework.podspec --allow-warnings --use-libraries --sources=&apos;http://gitlab.gowild.top/app/Eve_App_iOS_spec.git,https://github.com/CocoaPods/Specs.git&apos;]]></content>
+    <title><![CDATA[APP与H5的交互规范]]></title>
+    <url>%2F2019%2F06%2F16%2FAPP%E4%B8%8Eh5%E5%90%8C%E4%B8%80%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E%2F</url>
+    <content type="text"><![CDATA[#为了规范化 APP与H5调用通道，采用此类型声明 APP与H5的交互，采用APP端、H5端各注册一个方法，给彼此调用，具体业务类型则在调用参数里做区分 ##（1）APP端提供方法: 方法名：jsCallNative 参数：param param = { code: 1001, data: 传递的方法参数 } 例如： js需要调起nativa方法（以ios为例,使用了WebViewJavascriptBridge框架） 1-1：native端注册方法 jsCallNative (以ios为例) //原生不提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { NSLog(@&quot;Log: %@&quot;, data); }]; //2:原生提供返回值的注册 [self.bridge registerHandler:@&quot;jsCallNative&quot; handler:^(id data, WVJBResponseCallback responseCallback) { responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]); }]; js端代码 param = { code = 1001, data = { title: &apos;双十一活动分享&apos;, image: &apos;url&apos;, sharePlatfrom: &apos;QQ&apos;, ... } } //1：不需要返回值 bridge.callHandler(&quot;jsCallNative&quot;, param) //2：需要原生提供返回值(response为 nativa的返回值) bridge.callHandler(&quot;jsCallNative&quot;, param, function(response) { alert(&apos;Screen height:&apos; + response) })##（2）js端提供的方法: 方法名: nativeCallJs 参数：param param = { code: 1001, data: 传递的方法参数 } 例如: nativa需要调用js的方法 2-1: h5端注册方法nativeCallJs //不给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data) { alert(data) }) //给原生提供返回值 bridge.registerHandler(&quot;nativeCallJs&quot;, function(data, responseCallback) { responseCallback(document.location.toString()) }) 2-2: native端调用(以ios为例) //没有返回值 [self.bridge callHandler:@&quot;nativeCallJs&quot; data:param]; //有返回值(responseData) [self.bridge callHandler:@&quot;getCurrentPageUrl&quot; data:param responseCallback:^(id responseData) { NSLog(@&quot;Current UIWebView page URL is: %@&quot;, responseData); }];##(3): 本次分享模块方法类型定义 app分享到QQ code: 1001 分享 param:]]></content>
       <categories>
         <category>iOS</category>
       </categories>
       <tags>
         <tag>iOS</tag>
-        <tag>Cocoapods</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[基于Python 搭建App服务器（Tornado）]]></title>
-    <url>%2F2019%2F06%2F16%2F%E5%9F%BA%E4%BA%8EPython%20%E6%90%AD%E5%BB%BAApp%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88Tornado)%2F</url>
-    <content type="text"><![CDATA[#基于Python 搭建App服务器（Tornado） 说明：该教程基于CentOS7.2 64位 ##(1):环境配置(基于CentOS操作系统) CentOS 7.2 操作系统自带的 Python 版本为 2.7.5，本小册将以 Python 3.6.2 的版本进行讲解。即安装完 Python 3.6.2 后，系统上同时存在 Python 2.7.5 和 Python 3.6.2 两个版本。 12345678910111213141516171819202122232425262728293031323334351：安装依赖包$yum -y groupinstall &quot;Development tools&quot;$yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel2: 下载Python 3.6.2$wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz(注意：)如果提示 wget 命令无法找到，请先执行 yum -y install wget ,进行安装3: 创建安装目录$mkdir /usr/local/python34: 安装gcc由于 Python 3.6.2 的编译需要编译环境，故需安装 gcc。$yum -y install gcc5: 安装Python3.6.2解压 Python 3.6.2 并安装在 /usr/local/python3 目录下。$tar -xvJf Python-3.6.2.tar.xz$cd Python-3.6.2$./configure --prefix=/usr/local/python3$make &amp;&amp; make install6：创建软连$ln -s /usr/local/python3/bin/python3 /usr/bin/python3$ln -s /usr/local/python3/bin/pip3 /usr/bin/pip37: 测试 python3$python3 --version ##(2): 安装TornadoCentOS 下还无法直接使用 yum install tornado，但可以使用 pip 安装 Tornado。先执行 pip3 install –upgrade pip 命令升级 pip，再执行 pip3 install tornado 命令安装 Tornado。 测试Tornado 安装是否成功: 12$python3$import tornado ##(3): 安装MySQL 123456789$yum install mysql-devel$wget http://dev.mysql.com/get/mysql-community-$release-el7-5.noarch.rpm$rpm -ivh mysql-community-release-el7-5.noarch.rpm$yum -y install mysql-community-server$pip3 install mysqlclient$service mysqld restart#测试 MySQL 是否安装成功$systemctl status mysqld.service ##(4): 安装 SQLAlchemy 12345$pip3 install SQLAlchemy#测试 SQLAlchemy 是否安装成功$python3$import sqlalchemy ##(5): 代码编辑器mac 上推荐使用 VSCode ，搭配ftp 插件使用 ##(6): 创建 服务器工程 目录 demo 1234在root 根目录下,$cd /data (没有data目录的话, cd / ,mkdir data,然后 cd ~,再cd /data)#创建 demo文件夹$mkdir demo]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Server</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
