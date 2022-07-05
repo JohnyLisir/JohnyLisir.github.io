@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "6VPYUVZHPD.com.sibionics.fccgm",
+                "paths": [ "/app/*", "/qq_conn/2222222/*"]
+            }
+        ]
+    }
+}
